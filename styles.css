@@ -1,0 +1,176 @@
+:root{
+    --white: #FFFFFF;
+    --brown: #BCA8A1;
+    --pastel_blue: #8A90AA;
+    --lightBlue: #54719B;
+    --blue: #2B3A61;
+    --purple: #3D314A;
+    --darkBlue: #1A1423;
+    --darkBlue: #040323;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(../assets/font/Roboto/Roboto-Light.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "quicksand";
+    src: url(../assets/font/Quicksand/Quicksand-VariableFont_wght.ttf) format("truetype");
+}
+
+/*media queries*/
+/*header*/
+.introduction{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/img_arriere_plan/chapitre_01_etoile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.introScroll{
+    position: relative;
+    left: 40%;
+    right: 35%;
+    top: 60%;
+    color: var(--white);
+    font-family: "roboto";
+}
+
+.paragraphe{
+    font-family: "roboto";
+    font-size: 1.5vh;
+    color: var(--pastel_blue);
+    transform: translateY(10vw) translateX(18vw);
+    text-align: justify;
+    width: 55vw;
+}
+
+/*
+body{
+    overflow: hidden;
+}*/
+
+.chapitre{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    border: 1px red solid;
+}
+
+#chap1{
+    background-image: url(../img/img_arriere_plan/chapitre_01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+#chap2{
+    background-image: url(../img/img_arriere_plan/chapitre_02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#chap3{
+    background-image: url(../img/img_arriere_plan/chapitre_03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#chap4{
+    background-image: url(../img/img_arriere_plan/chapitre_04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#chap5{
+    background-image: url(../img/img_arriere_plan/chapitre_04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#chap6{
+    background-image: url(../img/img_arriere_plan/chapitre_06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#chap7{
+    background-image: url(../img/img_arriere_plan/chapitre_07.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#chap8{
+    background-image: url(../img/img_arriere_plan/chapitre_08.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*footer*/
+.credits{
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "roboto";
+    font-size: 11px;
+    color: var(--white);
+    text-align: center;
+    background-color: #3D314A;
+    font-family: "roboto";
+    font-size: 1.5vh;
+    color: var(--pastel_blue);
+}
+
+/*font*/
+h1{
+    color: var(--pastel_blue);
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    font-size: 3.5vw;
+    font-family: "quicksand";
+}
+
+/*spritesheet - perso*/
+.animationpersonnage{
+    position: absolute;
+    left: 50%;
+    width: 100px;
+    height: 200px;
+    animation-play-state: paused;
+    background-image: url(../img/img_personnages/spritesheet/tomber_spritesheet/tomber_spritesheet.png);
+}
+
+body.is-scrolling .animationpersonnage{
+    animation-play-state: running;
+}
+
+/*spritesheet - meteorite*/
+.animationVillain{
+    position: relative;
+    width: 1100px;
+    height: 1000px;
+    animation-play-state: paused;
+    background-image: url(../img/img_personnages/spritesheet/meteorite_spritesheet/spritesheet.png);
+    transform: translateX(70%);
+}
+
+body .is-scrolling .animationVillain{
+    animation-play-state: running;
+}
+
