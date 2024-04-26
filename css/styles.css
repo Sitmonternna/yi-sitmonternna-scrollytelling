@@ -55,70 +55,6 @@ body{
     overflow:scroll;
 }
 
-.chapitre{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    border: 1px red solid;
-}
-
-#chap1{
-    background-image: url(../img/img_arriere_plan/chapitre_01.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: 0;
-}
-
-#chap2{
-    background-image: url(../img/img_arriere_plan/chapitre_02.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#chap3{
-    background-image: url(../img/img_arriere_plan/chapitre_03.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#chap4{
-    background-image: url(../img/img_arriere_plan/chapitre_04.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#chap5{
-    background-image: url(../img/img_arriere_plan/chapitre_04.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#chap6{
-    background-image: url(../img/img_arriere_plan/chapitre_06.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#chap7{
-    background-image: url(../img/img_arriere_plan/chapitre_07.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-#chap8{
-    background-image: url(../img/img_arriere_plan/chapitre_08.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 /*footer*/
 .credits{
@@ -192,4 +128,285 @@ body.is-scrolling .animationmarche {
 
 body.is-scrolling .animationVillain {
     animation-play-state: running;
+}
+
+/*chapitre*/
+.chapitre{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    border: 1px red solid;
+}
+
+/*-------------------------------------------chapitre 1------------------------------------------------*/
+.cadreLit{
+    position: absolute;
+    width: 50vw;
+    bottom: -7vh;
+    left: 24vw;
+    z-index: -1;
+}
+
+.couverture{
+    position: absolute;
+    width: 50vw;
+    bottom: -13vh;
+    left: 30.5vw;
+}
+
+.lit_complet{
+    position: absolute;
+    width: 50vw;
+    bottom: -10vh;
+    left: 25vw;
+}
+
+.lune{
+    position: absolute;
+    width: 20vw;
+}
+
+.dort{
+    position: absolute;
+    width: 25vw;
+    bottom: 5vh;
+    left: 33vw;
+    z-index: 1;
+}
+#chap1{
+    background-image: url(../img/img_arriere_plan/chapitre_01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+#texteChap1{
+    position: absolute;
+    margin-left: 20vw;
+    margin-right: 20vw;
+
+}
+
+/*-------------------------------------------chapitre 2------------------------------------------------*/
+
+#chap2{
+    position: relative;
+    background-image: url(../img/img_arriere_plan/chapitre_02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lit_complet{
+    position: absolute;
+    width: 50vw;
+    bottom: -10vh;
+    left: 25vw;
+}
+
+.assisLit{
+    position: absolute;
+    width: 25vw;
+    bottom: 10vh;
+    left: 37vw;
+    z-index: 1;
+}
+
+.star{
+    position: absolute;
+    width: 10vw;
+    left: 70vw;
+    bottom: 60vh;
+}
+/*-------------------------------------------chapitre 3------------------------------------------------*/
+
+#chap3{
+    background-image: url(../img/img_arriere_plan/chapitre_03.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.debout{
+    position: absolute;
+    width: 20vw;
+    bottom: 0;
+    left: 10vw;
+}
+
+.star_avance{
+    position: absolute;
+    width: 10vw;
+    left: 2vw;
+    bottom: 30vh;
+}
+
+
+
+/*-------------------------------------------chapitre 4------------------------------------------------*/
+.tombe{
+    position: absolute;
+    width: 20vw;
+    left: 45vw;
+}
+
+.star_lead{
+    position: absolute;
+    width: 10vw;
+    left: 70vw;
+    bottom: 30vh;
+}
+
+#chap4{
+    background-image: url(../img/img_arriere_plan/chapitre_04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.roche{
+    position: absolute;
+    left: 40vw;
+    bottom: -5vh;
+    width: 20vw;
+}
+
+.atterir{
+    position: absolute;
+    width: 20vw;
+    left: 41vw;
+    bottom: 20vh;
+}
+
+/*-------------------------------------------chapitre 5------------------------------------------------*/
+
+#chap5{
+    background-image: url(../img/img_arriere_plan/chapitre_04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.star_tombe{
+    position: absolute;
+    width: 10vw;
+    left: 25vw;
+    bottom: 30vh;
+}
+
+.marche{
+    position: absolute;
+    width: 20vw;
+    bottom: 0;
+    left: 35vw;
+}
+
+.roche_marche{
+    position: absolute;
+    left: 50vw;
+    bottom: -5vh;
+    width: 20vw;
+}
+
+.villain{
+    position: absolute;
+    width: 20vw;
+    left: 65vw;
+    bottom: 30vh;
+}
+
+/*-------------------------------------------chapitre 6------------------------------------------------*/
+
+#chap6{
+    background-image: url(../img/img_arriere_plan/chapitre_06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.peurDebut{
+    position: absolute;
+    width: 20vw;
+    left: 55vw;
+    bottom: 0;
+}
+
+.peurMiddle{
+    position: absolute;
+    width: 20vw;
+    left: 55vw;
+    bottom: 0;
+}
+
+.peurFin{
+    position: absolute;
+    width: 20vw;
+    left: 55vw;
+    bottom: 0;
+}
+
+.star_peur{
+    position: absolute;
+    width: 10vw;
+    left: 70vw;
+    bottom: 30vh;
+}
+
+.villain_peur{
+    position: absolute;
+    width: 20vw;
+    left: 25vw;
+    bottom: 30vh;
+}
+
+/*-------------------------------------------chapitre 7------------------------------------------------*/
+
+#chap7{
+    background-image: url(../img/img_arriere_plan/chapitre_07.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.joieDebut{
+    position: absolute;
+    width: 20vw;
+    left: 55vw;
+    bottom: 0vh;
+}
+
+.joieFin{
+    position: absolute;
+    width: 20vw;
+    left: 55vw;
+    bottom: 0vh; 
+}
+/*-------------------------------------------chapitre 8------------------------------------------------*/
+
+#chap8{
+    background-image: url(../img/img_arriere_plan/chapitre_08.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#texteChap8{
+    position: absolute;
+    margin-left: 20vw;
+    margin-right: 20vw;
+
+}
+
+/*---------------------------------histoire texte-------------------------------------------------------*/
+.histoire{
+    position: absolute;
+    color: var(--pastel_blue);
+    font-size: 1.5vw;
+    font-family: roboto;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    top: 5vh;
+    text-align: justify;
 }
