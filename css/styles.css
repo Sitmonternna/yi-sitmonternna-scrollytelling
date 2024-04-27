@@ -250,6 +250,7 @@ body.is-scrolling .animationVillain {
     position: absolute;
     width: 20vw;
     left: 45vw;
+    z-index: 1;
 }
 
 .star_lead{
@@ -278,6 +279,7 @@ body.is-scrolling .animationVillain {
     width: 20vw;
     left: 41vw;
     bottom: 20vh;
+    opacity: 0;
 }
 
 /*-------------------------------------------chapitre 5------------------------------------------------*/
@@ -361,6 +363,37 @@ body.is-scrolling .animationVillain {
     bottom: 30vh;
 }
 
+
+h2{
+    font-size: 3vw;
+    color: var(--white);
+    font-family: quicksand;
+}
+
+.mot_audace{
+    position: absolute;
+    top: 20vh;
+    left: 45vw;
+    transform: rotate(-20deg);
+    opacity: 0;
+}
+
+.mot_courage{
+    position: absolute;
+    top: 15vh;
+    left: 65vw;
+    transform: rotate(20deg);
+    opacity: 0;
+}
+
+.mot_determination{
+    position: absolute;
+    top: 30vh;
+    left: 45vw;
+    transform: rotate(-10deg);
+    opacity: 0;
+}
+
 /*-------------------------------------------chapitre 7------------------------------------------------*/
 
 #chap7{
@@ -382,6 +415,21 @@ body.is-scrolling .animationVillain {
     width: 20vw;
     left: 55vw;
     bottom: 0vh; 
+}
+
+.star_ours{
+    position: absolute;
+    width: 10vw;
+    left: 70vw;
+    bottom: 30vh;
+}
+
+.grand_ours{
+    position: absolute;
+    width: 15vw;
+    left: 70vw;
+    bottom: 35vh;
+    opacity: 0;
 }
 /*-------------------------------------------chapitre 8------------------------------------------------*/
 
