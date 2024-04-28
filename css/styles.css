@@ -84,7 +84,9 @@ h1{
 
 /*spritesheet - perso*/
 .animationmarche{
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 33vw;
     width: 400px;
     height: 400px;
     background-size: cover;
@@ -312,11 +314,12 @@ body.is-scrolling .animationVillain {
     width: 20vw;
 }
 
-.villain{
+.villain_appear{
     position: absolute;
     width: 20vw;
     left: 65vw;
     bottom: 30vh;
+    opacity: 0;
 }
 
 /*-------------------------------------------chapitre 6------------------------------------------------*/
@@ -446,6 +449,10 @@ h2{
     margin-right: 20vw;
 }
 
+
+.assisLit{
+    opacity: 0;
+}
 /*---------------------------------histoire texte-------------------------------------------------------*/
 .histoire{
     position: absolute;
