@@ -19,7 +19,6 @@
     src: url(../assets/font/Quicksand/Quicksand-VariableFont_wght.ttf) format("truetype");
 }
 
-/*media queries*/
 /*header*/
 .introduction{
     position: relative;
@@ -585,3 +584,135 @@ body.is-scrolling .animationVillain {
 }
 
 /*-------------------------------------------------------respnsive_media_queries---------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1000px ){
+    .cadreLit{
+        bottom: 2vh;
+    }
+    
+    .couverture{
+        bottom: -2vh;
+    }
+    
+    .lit_complet{
+        bottom: 0;
+    }
+
+    .dort{
+        position: absolute;
+        width: 25vw;
+        bottom: 8vh;
+        left: 33vw;
+        z-index: 1;
+    }
+
+    .lit_complet_chap3{
+        position: absolute;
+        width: 50vw;
+        bottom: -5vh;
+        left: 25vw;
+    }
+
+    .roche{
+        position: absolute;
+        left: 40vw;
+        bottom: 7vh;
+        width: 20vw;
+    }
+
+    .animationmarche_chap5{
+        position: absolute;
+        bottom: -8vh;
+        left: 50vw;
+        transform: scale(0.6);
+    }
+
+    .dort_reveille{
+        bottom: 8vh;
+    }
+}
+
+@media screen and (max-width: 500px ){
+    .cadreLit{
+        bottom: 2vh;
+    }
+    
+    .couverture{
+        bottom: -2vh;
+    }
+    
+    .lit_complet{
+        bottom: 0;
+    }
+
+    .dort{
+        position: absolute;
+        width: 25vw;
+        bottom: 6vh;
+        left: 33vw;
+        z-index: 1;
+    }
+
+    .lit_complet_chap3{
+        position: absolute;
+        width: 50vw;
+        bottom: -5vh;
+        left: 25vw;
+    }
+
+    .animationmarche{
+        position: absolute;
+        bottom: -15vh;
+        left: -9vw;
+        transform: scale(0.4);
+    }
+
+    .roche{
+        position: absolute;
+        left: 40vw;
+        bottom: 12vh;
+        width: 20vw;
+    }
+
+    .roche_marche{
+        position: absolute;
+        left: 75vw;
+        bottom: 0vh;
+
+    }
+
+    .assisLit{
+        bottom: 7vh;
+    }
+
+    .animationmarche_chap5{
+        position: absolute;
+        bottom: -15vh;
+        left: 25vw;
+        transform: scale(0.4);
+    }
+
+    .dort_reveille{
+        bottom: 5vh;
+    }
+
+    .assisLit_reveille{
+        bottom: 6vh;
+    }
+
+    .animationVillain{
+        transform: scale(0.6);
+        left: -20vw;
+    }
+
+    .mot_audace{
+        top: 80vh;
+    }
+    
+    .mot_courage{
+        top: 80vh;
+    }
+    
+    .mot_determination{
+        top: 75vh;
+    }
+}
