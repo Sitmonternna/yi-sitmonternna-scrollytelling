@@ -1,3 +1,26 @@
+/*style généraux*/
+
+ul.technique-gsap{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: 400;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px 12px 20px;
+    margin: 0;
+    max-width: 300px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+ul.technique-gsap li{
+    margin: 5px 0;
+}
+
 :root{
     --white: #FFFFFF;
     --brown: #BCA8A1;
@@ -84,8 +107,8 @@ h1{
 /*spritesheet - marche Polaris*/
 .animationmarche{
     position: absolute;
-    bottom: 0;
-    left: 33vw;
+    bottom: -10vh;
+    left: 15vw;
     width: 400px;
     height: 400px;
     background-size: cover;
@@ -97,6 +120,7 @@ h1{
     animation-timing-function: steps(5);
     animation-play-state: paused;
     z-index: 1;
+    transform: scale(0.5);
 }
 
 @keyframes marche{
