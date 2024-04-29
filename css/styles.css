@@ -52,7 +52,7 @@
 
 
 body{
-    overflow:scroll;
+    overflow: scroll;
 }
 
 
@@ -82,7 +82,7 @@ h1{
     font-family: "quicksand";
 }
 
-/*spritesheet - perso*/
+/*spritesheet - marche Polaris*/
 .animationmarche{
     position: absolute;
     bottom: 0;
@@ -97,6 +97,7 @@ h1{
     animation-iteration-count: infinite;
     animation-timing-function: steps(5);
     animation-play-state: paused;
+    z-index: 1;
 }
 
 @keyframes marche{
@@ -105,30 +106,6 @@ h1{
 }
 
 body.is-scrolling .animationmarche {
-    animation-play-state: running;
-}
-
-/*animation villain*/
-.animationVillain{
-    position: relative;
-    width: 600px;
-    height: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(../img/img_personnages/spritesheet/meteorite_spritesheet/spritesheet.png);
-    animation-name: villain;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: steps(6);
-    animation-play-state: paused;
-}
-
-@keyframes villain{
-    from {background-position: 0 0;}
-    to {background-position: -237600px 0;}
-}
-
-body.is-scrolling .animationVillain {
     animation-play-state: running;
 }
 
@@ -141,6 +118,65 @@ body.is-scrolling .animationVillain {
     border: 1px red solid;
 }
 
+.poisson{
+    position: absolute;
+    bottom: 0;
+    width: 20vw;
+    z-index: -1;
+    left: 80vw;
+    bottom: 5vh;
+}
+
+.chien{
+    position: absolute;
+    width: 20vw;
+    z-index: -1;
+    bottom: 30vh;
+    left: 70vw;
+    transform: rotate(10deg);
+}
+
+.draco{
+    position: absolute;
+    width: 20vw;
+    z-index: -1;
+    bottom: 0;
+    left: 60vw;
+
+}
+
+.orion{
+    position: absolute;
+    width: 15vw;
+    z-index: -1;
+    bottom: 25vh;
+    left: 50vw;
+}
+
+.perseus{
+    position: absolute;
+    width: 15vw;
+    z-index: -1;
+    bottom: 10vh;
+    left: 15vw;
+
+}
+
+.major{
+    position: absolute;
+    width: 15vw;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+
+.constellation{
+    opacity: 0;
+}
+
+.constellation_inverse{
+    opacity: 0;
+}
 /*-------------------------------------------chapitre 1------------------------------------------------*/
 .cadreLit{
     position: absolute;
@@ -216,7 +252,7 @@ body.is-scrolling .animationVillain {
     z-index: 1;
 }
 
-.star{
+.star_chap2{
     position: absolute;
     width: 10vw;
     left: 70vw;
@@ -241,10 +277,16 @@ body.is-scrolling .animationVillain {
 .star_avance{
     position: absolute;
     width: 10vw;
-    left: 2vw;
+    left: 25vw;
     bottom: 30vh;
 }
 
+.lit_complet_chap3{
+    position: absolute;
+    width: 50vw;
+    bottom: -10vh;
+    left: 25vw;
+}
 
 
 /*-------------------------------------------chapitre 4------------------------------------------------*/
@@ -252,6 +294,7 @@ body.is-scrolling .animationVillain {
     position: absolute;
     width: 20vw;
     left: 45vw;
+    top: 0;
     z-index: 1;
 }
 
@@ -259,7 +302,7 @@ body.is-scrolling .animationVillain {
     position: absolute;
     width: 10vw;
     left: 70vw;
-    bottom: 30vh;
+    top: 0;
 }
 
 #chap4{
@@ -293,23 +336,16 @@ body.is-scrolling .animationVillain {
     background-size: cover;
 }
 
-.star_tombe{
+.star_pyupyu{
     position: absolute;
     width: 10vw;
-    left: 25vw;
+    left: 53vw;
     bottom: 30vh;
-}
-
-.marche{
-    position: absolute;
-    width: 20vw;
-    bottom: 0;
-    left: 35vw;
 }
 
 .roche_marche{
     position: absolute;
-    left: 50vw;
+    left: 75vw;
     bottom: -5vh;
     width: 20vw;
 }
@@ -317,9 +353,35 @@ body.is-scrolling .animationVillain {
 .villain_appear{
     position: absolute;
     width: 20vw;
-    left: 65vw;
+    left: 5vw;
     bottom: 30vh;
     opacity: 0;
+}
+
+.animationmarche_chap5{
+    position: absolute;
+    bottom: 0;
+    left: 60vw;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/img_personnages/spritesheet/marche_spritesheet/marche.png);
+    animation-name: marcheChap5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(5);
+    animation-play-state: paused;
+    z-index: 1;
+}
+
+@keyframes marcheChap5{
+    from {background-position: 0 0;}
+    to {background-position: 0 -2000px;}
+}
+
+body.is-scrolling .animationmarche_chap5 {
+    animation-play-state: running;
 }
 
 /*-------------------------------------------chapitre 6------------------------------------------------*/
@@ -336,6 +398,7 @@ body.is-scrolling .animationVillain {
     width: 20vw;
     left: 55vw;
     bottom: 0;
+    opacity: 1;
 }
 
 .peurMiddle{
@@ -343,6 +406,8 @@ body.is-scrolling .animationVillain {
     width: 20vw;
     left: 55vw;
     bottom: 0;
+    opacity: 0;
+
 }
 
 .peurFin{
@@ -350,6 +415,8 @@ body.is-scrolling .animationVillain {
     width: 20vw;
     left: 55vw;
     bottom: 0;
+    opacity: 0;
+
 }
 
 .star_peur{
@@ -397,6 +464,33 @@ h2{
     opacity: 0;
 }
 
+/*animation villain*/
+.animationVillain{
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    width: 600px;
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/img_personnages/spritesheet/meteorite_spritesheet/spritesheet.png);
+    animation-name: villain;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(6);
+    animation-play-state: paused;
+    transform: scale(1.5);
+}
+
+@keyframes villain{
+    from {background-position: 0 0;}
+    to {background-position: -237600px 0;}
+}
+
+body.is-scrolling .animationVillain {
+    animation-play-state: running;
+}
+
 /*-------------------------------------------chapitre 7------------------------------------------------*/
 
 #chap7{
@@ -411,6 +505,7 @@ h2{
     width: 20vw;
     left: 55vw;
     bottom: 0vh;
+    opacity: 0;
 }
 
 .joieFin{
@@ -418,6 +513,7 @@ h2{
     width: 20vw;
     left: 55vw;
     bottom: 0vh; 
+    opacity: 0;
 }
 
 .star_ours{
@@ -434,6 +530,16 @@ h2{
     bottom: 35vh;
     opacity: 0;
 }
+
+.choque{
+    position: absolute;
+    width: 20vw;
+    left: 55vw;
+    bottom: 0;
+    opacity: 0;
+
+}
+
 /*-------------------------------------------chapitre 8------------------------------------------------*/
 
 #chap8{
@@ -449,10 +555,23 @@ h2{
     margin-right: 20vw;
 }
 
-
-.assisLit{
+.assisLit_reveille{
+    position: absolute;
+    width: 25vw;
+    bottom: 10vh;
+    left: 37vw;
+    z-index: 1;
     opacity: 0;
 }
+
+.dort_reveille{
+    position: absolute;
+    width: 25vw;
+    bottom: 5vh;
+    left: 33vw;
+    z-index: 1;
+}
+
 /*---------------------------------histoire texte-------------------------------------------------------*/
 .histoire{
     position: absolute;
@@ -464,3 +583,5 @@ h2{
     top: 5vh;
     text-align: justify;
 }
+
+/*-------------------------------------------------------respnsive_media_queries---------------------------------------------------------------------------------------------------*/

@@ -15,8 +15,9 @@ window.addEventListener('scroll', function() {
 });
 
 /* chapitre 1 */
-
-
+/*constellation */
+gsap.set(".constellation", {x:'0', y:'100vh', opacity:1, duration:5});
+gsap.to(".constellation", {x:'0', y:'80vh', duration:1, opacity:1, repeat:-1,duration:5});
 
 /* chapitre 2 */
 /*------------------------etoile--------------------------------------------------*/ 
@@ -25,55 +26,110 @@ gsap.to(".star", {x:'70%', y:'50%', duration:1, repeat:-1, yoyo: true});
 
 /* chapitre 3 */
 
+/*-----------star------------------*/
+gsap.timeline({repeat:-1})
+.to('.star_avance', {x:'-2vw', y:'-4vh', duration:1})
+.to('.star_avance', {x:'-4vw', y:'2vh', duration:1})
+.to('.star_avance', {x:'-6vw', y:'-4vh', duration:1})
+.to('.star_avance', { x:'-8vw', y:'2vh', duration:1})
+.to('.star_avance', {x:'-10vw', y:'-4vh', duration:1})
+.to('.star_avance', { x:'-12vw', y:'2vh', duration:1})
+.to('.star_avance', {x:'-14vw', y:'-4vh', duration:1})
+.to('.star_avance', { x:'-16vw', y:'2vh', duration:1})
+
+
+/*---------lit_bouge----------------------------------- */
+gsap.set(".lit_complet_chap3", { x:0, y:0, duration: 1, repeat: -1, yoyo: true});
+gsap.to(".lit_complet_chap3", {x:'20vw', y:0, duration: 10, repeat: -1,});
 
 
 /* chapitre 4 */
 
 /* boy tombe et atteri*/
-gsap.timeline({repeat:-1, yoyo: true})
+gsap.timeline({repeat:-1})
 .to('.tombe', {x:'0', y:'50vh', rotate: '360deg',duration:3})
 .to('.tombe', {x:'0', y:'50vh', opacity:0, duration:1})
 .to('.atterir', {opacity:1, duration:1})
-.to('.roche', {scale: 0.5, duration:1})
+
+gsap.timeline({repeat:-1})
+.to('.star_lead', {x:'0', y:'30vh', rotate: '360deg',duration:5})
+gsap.to(".star_lead", {x:0, y:'30vh', duration: 5});
 
 /* chapitre 5 */
 
 /* villain appear for the first time */
-gsap.timeline({repeat:-1, yoyo: true})
+gsap.timeline({repeat:-1})
 .to('.villain_appear', {opacity:1, x:'3vw',y:'3vh', duration:1})
 .to('.villain_appear', {opacity:1, x:'2vw',y:'2vh', duration:1})
 .to('.villain_appear', {opacity:1, x:'1vw',y:'3vh', duration:1})
 .to('.villain_appear', {opacity:1, x:'2vw',y:'2vh', duration:1})
 
+/*-----------star------------------*/
+gsap.timeline({repeat:-1})
+.to('.star_pyupyu', {x:0, y:0, duration:1})
+.to('.star_pyupyu', {x:'1vw', y:0, duration:1})
+.to('.star_pyupyu', {x:0, y:0, duration:1})
+.to('.star_pyupyu', { x:'1vw', y:0, duration:1})
+.to('.star_pyupyu', {x:0, y:0, duration:1})
+.to('.star_pyupyu', { x:'1vw', y:0, duration:1})
+.to('.star_pyupyu', {x:0, y:0, duration:1})
+.to('.star_pyupyu', { x:'1vw', y:0, duration:1})
+
 /* chapitre 6 */
 
-/*---------------------------mot de encouragement--------------------------------------------------------- */
-gsap.timeline({repeat:-1, yoyo: true})
-.from('.mot_audace', {opacity:0, duration:2})
-.from('.mot_audace', {opacity:1, duration:2})
-.from('.mot_audace', {opacity:0, duration:2})
-.from('.mot_courage', {opacity:0, duration:2})
-.from('.mot_courage', {opacity:1, duration:2})
-.from('.mot_courage', {opacity:0, duration:2})
-.from('.mot_determination', {opacity:0, duration:3})
-.from('.mot_determination', {opacity:1, duration:3})
-.from('.mot_determination', {opacity:0, duration:3})
+/*---------------------------mot de encouragement------------------------------ */
+gsap.timeline({repeat:-1})
+.to('.mot_audace', {opacity:1, duration:1})
+.to('.mot_audace', {opacity:0, duration:3})
+.to('.mot_courage', {opacity:1, duration:1})
+.to('.mot_courage', {opacity:0, duration:3})
+.to('.mot_determination', {opacity:1, duration:1})
+.to('.mot_determination', {opacity:0, duration:3})
+
+/* stade de peur*/
+gsap.timeline({repeat:-1})
+.to('.peurDebut', {opacity:0, duration:2})
+.to('.peurMiddle', {opacity:1, duration:1})
+.to('.peurMiddle', {opacity:0, duration:1})
+.to('.peurFin', {opacity:1, duration:1})
+.to('.peurFin', {opacity:0, duration:1})
+
+
+/* star*/
+gsap.timeline({repeat:-1})
+.to('.star_peur', {x:0, y:0, duration:1})
+.to('.star_peur', {x:'1vw', y:0, duration:1})
+.to('.star_peur', {x:0, y:0, duration:1})
+.to('.star_peur', { x:'1vw', y:0, duration:1})
+.to('.star_peur', {x:0, y:0, duration:1})
+.to('.star_peur', { x:'1vw', y:0, duration:1})
+.to('.star_peur', {x:0, y:0, duration:1})
+.to('.star_peur', { x:'1vw', y:0, duration:1})
 
 /* chapitre 7 */
 
-/*moon to bear */
-gsap.timeline({repeat:-1, yoyo: true})
+/*danse joie */
+gsap.timeline({repeat:-1})
+.to('.joieDebut', {opacity:1, duration:3})
+.to('.joieDebut', {opacity:0,  duration:1})
+.to('.joieFin', {opacity:1, duration:1})
 .to('.star_ours', {opacity:0, y: '-5vw',duration:3})
 .to('.grand_ours', { opacity:1, duration:1})
 .to('.grand_ours', {scale: 2, opacity:0, duration:2, y:'-7vw'})
-
+.to('.joieFin', {opacity:0, duration:1})
+.to('.choque', {opacity:1, duration:1})
 
 /*  chapitre 8 */
 /* waking from dream */
-gsap.timeline({repeat:-1, yoyo: true})
-.to('.dort', {opacity:1, x:'0',y:'0', duration:3})
-.to('.dort', {opacity:0, x:'0',y:'0', duration:3})
-.to('.assisLit', {opacity:1, duration:1})
+gsap.timeline({repeat:-1})
+.to('.dort_reveille', {opacity:1, x:'0',y:'0', duration:3})
+.to('.dort_reveille', {opacity:0, x:'0',y:'0', duration:3})
+.to('.assisLit_reveille', {opacity:1, duration:1})
+
+/*constellation */
+gsap.set(".constellation_inverse", {x:'0', y:'65vh', opacity:1, duration:5});
+gsap.to(".constellation_inverse", {x:'0', y:'90vh', duration:1, opacity:1, repeat:-1,duration:5});
+
 
 
 
