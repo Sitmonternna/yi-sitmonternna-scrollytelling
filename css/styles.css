@@ -121,6 +121,7 @@ h1{
     animation-play-state: paused;
     z-index: 1;
     transform: scale(0.5);
+    border: green 3px solid;
 }
 
 @keyframes marche{
@@ -195,10 +196,12 @@ body.is-scrolling .animationmarche {
 
 .constellation{
     opacity: 0;
+    border: green 3px solid;
 }
 
 .constellation_inverse{
     opacity: 0;
+    border: green 3px solid;
 }
 /*-------------------------------------------chapitre 1------------------------------------------------*/
 .cadreLit{
@@ -207,6 +210,7 @@ body.is-scrolling .animationmarche {
     bottom: -7vh;
     left: 24vw;
     z-index: -1;
+    border: blue 3px solid;
 }
 
 .couverture{
@@ -214,6 +218,7 @@ body.is-scrolling .animationmarche {
     width: 50vw;
     bottom: -13vh;
     left: 30.5vw;
+    border: blue 3px solid;
 }
 
 .lit_complet{
@@ -221,6 +226,7 @@ body.is-scrolling .animationmarche {
     width: 50vw;
     bottom: -10vh;
     left: 25vw;
+    border: blue 3px solid;
 }
 
 .lune{
@@ -234,6 +240,7 @@ body.is-scrolling .animationmarche {
     bottom: 5vh;
     left: 33vw;
     z-index: 1;
+    border: blue 3px solid;
 }
 #chap1{
     background-image: url(../img/img_arriere_plan/chapitre_01.jpg);
@@ -273,6 +280,7 @@ body.is-scrolling .animationmarche {
     bottom: 10vh;
     left: 37vw;
     z-index: 1;
+    border: green 3px solid;
 }
 
 .star_chap2{
@@ -280,6 +288,7 @@ body.is-scrolling .animationmarche {
     width: 10vw;
     left: 70vw;
     bottom: 60vh;
+    border: green 3px solid;
 }
 /*-------------------------------------------chapitre 3------------------------------------------------*/
 
@@ -295,6 +304,7 @@ body.is-scrolling .animationmarche {
     width: 20vw;
     bottom: 0;
     left: 10vw;
+    border: green 3px solid;
 }
 
 .star_avance{
@@ -302,6 +312,7 @@ body.is-scrolling .animationmarche {
     width: 10vw;
     left: 25vw;
     bottom: 30vh;
+    border: green 3px solid;
 }
 
 .lit_complet_chap3{
@@ -309,6 +320,7 @@ body.is-scrolling .animationmarche {
     width: 50vw;
     bottom: -10vh;
     left: 25vw;
+    border: green 3px solid;
 }
 
 
@@ -319,6 +331,7 @@ body.is-scrolling .animationmarche {
     left: 45vw;
     top: 0;
     z-index: 1;
+    border: green 3px solid;
 }
 
 .star_lead{
@@ -326,6 +339,7 @@ body.is-scrolling .animationmarche {
     width: 10vw;
     left: 70vw;
     top: 0;
+    border: green 3px solid;
 }
 
 #chap4{
@@ -364,6 +378,7 @@ body.is-scrolling .animationmarche {
     width: 10vw;
     left: 53vw;
     bottom: 30vh;
+    border: green 3px solid;
 }
 
 .roche_marche{
@@ -379,6 +394,7 @@ body.is-scrolling .animationmarche {
     left: 5vw;
     bottom: 30vh;
     opacity: 0;
+    border: green 3px solid;
 }
 
 .animationmarche_chap5{
@@ -396,6 +412,7 @@ body.is-scrolling .animationmarche {
     animation-timing-function: steps(5);
     animation-play-state: paused;
     z-index: 1;
+    border: green 3px solid;
 }
 
 @keyframes marcheChap5{
@@ -422,6 +439,7 @@ body.is-scrolling .animationmarche_chap5 {
     left: 55vw;
     bottom: 0;
     opacity: 1;
+    border: green 3px solid;
 }
 
 .peurMiddle{
@@ -430,6 +448,7 @@ body.is-scrolling .animationmarche_chap5 {
     left: 55vw;
     bottom: 0;
     opacity: 0;
+    border: green 3px solid;
 
 }
 
@@ -439,6 +458,7 @@ body.is-scrolling .animationmarche_chap5 {
     left: 55vw;
     bottom: 0;
     opacity: 0;
+    border: green 3px solid;
 
 }
 
@@ -447,15 +467,16 @@ body.is-scrolling .animationmarche_chap5 {
     width: 10vw;
     left: 70vw;
     bottom: 30vh;
+    border: green 3px solid;
 }
-
+/*
 .villain_peur{
     position: absolute;
     width: 20vw;
     left: 25vw;
     bottom: 30vh;
 }
-
+*/
 
 h2{
     font-size: 3vw;
@@ -469,6 +490,7 @@ h2{
     left: 45vw;
     transform: rotate(-20deg);
     opacity: 0;
+    border: green 3px solid;
 }
 
 .mot_courage{
@@ -477,6 +499,7 @@ h2{
     left: 65vw;
     transform: rotate(20deg);
     opacity: 0;
+    border: green 3px solid;
 }
 
 .mot_determination{
@@ -485,6 +508,7 @@ h2{
     left: 45vw;
     transform: rotate(-10deg);
     opacity: 0;
+    border: green 3px solid;
 }
 
 /*animation villain*/
@@ -503,6 +527,7 @@ h2{
     animation-timing-function: steps(6);
     animation-play-state: paused;
     transform: scale(1.5);
+    border: green 3px solid;
 }
 
 @keyframes villain{
@@ -529,6 +554,7 @@ body.is-scrolling .animationVillain {
     left: 55vw;
     bottom: 0vh;
     opacity: 0;
+    border: green 3px solid;
 }
 
 .joieFin{
@@ -537,6 +563,7 @@ body.is-scrolling .animationVillain {
     left: 55vw;
     bottom: 0vh; 
     opacity: 0;
+    border: green 3px solid;
 }
 
 .star_ours{
@@ -544,6 +571,7 @@ body.is-scrolling .animationVillain {
     width: 10vw;
     left: 70vw;
     bottom: 30vh;
+    border: green 3px solid;
 }
 
 .grand_ours{
@@ -552,6 +580,7 @@ body.is-scrolling .animationVillain {
     left: 70vw;
     bottom: 35vh;
     opacity: 0;
+    border: green 3px solid;
 }
 
 .choque{
@@ -560,7 +589,7 @@ body.is-scrolling .animationVillain {
     left: 55vw;
     bottom: 0;
     opacity: 0;
-
+    border: green 3px solid;
 }
 
 /*-------------------------------------------chapitre 8------------------------------------------------*/
@@ -585,6 +614,7 @@ body.is-scrolling .animationVillain {
     left: 37vw;
     z-index: 1;
     opacity: 0;
+    border: green 3px solid;
 }
 
 .dort_reveille{
@@ -593,6 +623,7 @@ body.is-scrolling .animationVillain {
     bottom: 5vh;
     left: 33vw;
     z-index: 1;
+    border: green 3px solid;
 }
 
 /*---------------------------------histoire texte-------------------------------------------------------*/
