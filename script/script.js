@@ -14,7 +14,37 @@ window.addEventListener('scroll', function() {
     }, 2000);
 });
 
+// SROLLTRIGGER
+
+
 /* chapitre 1 */
+
+// SROLLTRIGGER
+const chap1Scoll = document.getElementById("chap1");
+gsap.to(chap1Scoll,{
+    opacity: 1,
+  duration: 1,
+  scrollTrigger: {
+    trigger: chapter2,
+    start: 'top center',
+    end: 'bottom center',
+    scrub: true
+    }
+});
+
+
+const chap2Scoll = document.getElementById("chap2");
+gsap.to(chap2Scoll,{
+    opacity: 1,
+    duration:1,
+    scrollTrigger: {
+        trigger: chap2Scoll,
+        start: "top center",
+        end: "bottom center",
+        scrub: true
+    }
+});
+
 /*constellation */
 gsap.set(".constellation", {x:'0', y:'100vh', opacity:1, duration:5});
 gsap.to(".constellation", {x:'0', y:'80vh', duration:1, opacity:1, repeat:-1,duration:5});
