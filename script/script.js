@@ -22,48 +22,133 @@ window.addEventListener('scroll', function() {
 // SROLLTRIGGER
 
 gsap.registerPlugin(ScrollTrigger);
+document.addEventListener("DOMContentLoaded", function() {
+    // Configuration de l'animation pour chaque chapitre
 
+    /* ---- Animation chapitre 1 ----- */
+    gsap.set("#chap1", { opacity: 0, y: 50 }); // Cache le chapitre au départ
+    gsap.to("#chap1", {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#chap1",
+        start: "top 80%", // Déclenche l'animation lorsque le haut du chapitre atteint 80% du viewport
+        end: "bottom 20%", // Arrête l'animation lorsque le bas du chapitre atteint 20% du viewport
+        toggleActions: "play none none none", // Animation déclenchée lorsque le chapitre entre en scène
+        markers: true // Pour déboguer, affiche les marqueurs ScrollTrigger
+      }
+    });
 
-gsap.to("#chap1",{
-  scrollTrigger: {
-    trigger: "#chap1",
-    start: 'top center',
-    end: 'bottom center',
-    toggleActions: "play none none none"
-    },
-    opacity: 1,
-    duration: 1
-});
-
-gsap.to("#chap2",{
-    opacity: 1,
-    duration:1,
-    scrollTrigger: {
+    /* ---- Animation chapitre 2 ----- */
+    gsap.set("#chap2", { opacity: 0}); 
+    gsap.to("#chap2", {
+      opacity: 1,
+      x: 0,
+      duration: 1,
+      scrollTrigger: {
         trigger: "#chap2",
-        start: "top center",
-        end: "bottom center",
-        toggleActions: "play none none none"
-    },
-    opacity: 1,
-    duration: 1
-});
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none none",
+        markers: true
+      }
+    });
 
-gsap.to("#chap3",{
-    opacity: 1,
-    duration:1,
-    scrollTrigger: {
+    /* ---- Animation chapitre 3 ----- */
+    gsap.set("#chap3", { opacity: 0, scale: 0.5 });
+    gsap.to("#chap3", {
+      opacity: 1,
+      scale: 1,
+      duration: 1,
+      scrollTrigger: {
         trigger: "#chap3",
-        start: "top center",
-        end: "bottom center",
-        toggleActions: "play none none none"
-    },
-    opacity: 1,
-    duration: 1
-});
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none none",
+        markers: true
+      }
+    });
 
+    /* ---- Animation chapitre 4 ----- */
+    gsap.set("#chap4", { opacity: 0, scale: 0.5 }); 
+    gsap.to("#chap4", {
+      opacity: 1,
+      scale: 1,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#chap4",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none none",
+        markers: true
+      }
+    });
+    /* ---- Animation chapitre 5 ----- */
+    gsap.set("#chap5", { opacity: 0, scale: 0.5 }); 
+    gsap.to("#chap5", {
+      opacity: 1,
+      scale: 1,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#chap5",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none none",
+        markers: true
+      }
+    });
+
+    /* ---- Animation chapitre 6 ----- */
+    gsap.set("#chap6", { opacity: 0, scale: 0.5 });
+    gsap.to("#chap6", {
+      opacity: 1,
+      scale: 1,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#chap6",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none none",
+        markers: true
+      }
+    });
+
+    /* ---- Animation chapitre 7 ----- */    
+    gsap.set("#chap7", { opacity: 0, scale: 0.5 });
+    gsap.to("#chap7", {
+      opacity: 1,
+      scale: 1,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#chap7",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none none",
+        markers: true
+      }
+    });
+    /* ---- Animation chapitre 8 ----- */
+    gsap.set("#chap8", { opacity: 0, scale: 0.5 });
+    gsap.to("#chap8", {
+      opacity: 1,
+      scale: 1,
+      duration: 1,
+      scrollTrigger: {
+        trigger: "#chap8",
+        start: "top 80%",
+        end: "bottom 20%",
+        toggleActions: "play none none none",
+        markers: true
+      }
+    });
+  });
+
+
+/*Animations */
 /*constellation */
 gsap.set(".constellation", {x:'0', y:'100vh', opacity:1, duration:5});
-gsap.to(".constellation", {x:'0', y:'80vh', duration:1, opacity:1, repeat:-1,duration:5});
+gsap.to(".constellation", {x:'0', y:'80vh', duration:1, opacity:1,repeat:-1,duration:5});
 
 /* chapitre 2 */
 /*------------------------etoile--------------------------------------------------*/ 
@@ -72,8 +157,16 @@ gsap.to(".star", {x:'70%', y:'50%', duration:1, repeat:-1, yoyo: true});
 
 /* chapitre 3 */
 
-/*-----------star------------------*/
-gsap.timeline({repeat:-1})
+/*-----------star avec animation inverse ------------------*/
+gsap.timeline({repeat:-1,
+    scrollTrigger:{
+        markers: true,
+        start: "top 75%",
+        end: "bottom 25%",
+        toggleActions: "restart complete reverse reverse",
+        trigger: "#star_avance"
+    }
+})
 .to('.star_avance', {x:'-2vw', y:'-4vh', duration:1})
 .to('.star_avance', {x:'-4vw', y:'2vh', duration:1})
 .to('.star_avance', {x:'-6vw', y:'-4vh', duration:1})
@@ -92,10 +185,13 @@ gsap.to(".lit_complet_chap3", {x:'20vw', y:0, duration: 10, repeat: -1,});
 /* chapitre 4 */
 
 /* boy tombe et atteri*/
+
 gsap.timeline({repeat:-1})
 .to('.tombe', {x:'0', y:'50vh', rotate: '360deg',duration:3})
 .to('.tombe', {x:'0', y:'50vh', opacity:0, duration:1})
-.to('.atterir', {opacity:1, duration:1})
+.to('.atterir', {opacity:1, duration:1});
+
+
 
 gsap.timeline({repeat:-1})
 .to('.star_lead', {x:'0', y:'30vh', rotate: '360deg',duration:5})
