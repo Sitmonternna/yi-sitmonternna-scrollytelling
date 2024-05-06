@@ -302,10 +302,24 @@ svg{
 /*-------------------------------------------chapitre 3------------------------------------------------*/
 
 #chap3{
-    background-image: url(../img/img_arriere_plan/chapitre_03.jpg);
+    background-image: url(../img/img_arriere_plan/chapitre_03_bleu.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.nuageDroit{
+    position: absolute;
+    top: -10vh;
+    left: 50vw;
+    border: green 3px solid;
+}
+
+.nuageGauche{
+    position: absolute;
+    top: 0vh;
+    right: 50vw;
+    border: green 3px solid;
 }
 
 .debout{
@@ -381,6 +395,7 @@ svg{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 .star_pyupyu{
     position: absolute;
@@ -645,6 +660,7 @@ body.is-scrolling .animationVillain {
     margin-right: 10vw;
     top: 5vh;
     text-align: justify;
+    z-index: 1;
 }
 
 /*-------------------------------------------------------respnsive_media_queries---------------------------------------------------------------------------------------------------*/

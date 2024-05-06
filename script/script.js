@@ -184,6 +184,45 @@ gsap.timeline({repeat:-1,
 gsap.set(".lit_complet_chap3", { x:0, y:0, duration: 1, repeat: -1, yoyo: true});
 gsap.to(".lit_complet_chap3", {x:'20vw', y:0, duration: 10, repeat: -1,});
 
+/* parallax 
+gsap.set("#parallaxe-bg-1", { x:0, y:0, duration: 1});
+gsap.to("#parallaxe-bg-1", {x:'0vw', y:'30vh', duration: 20, repeat: -1,});
+
+gsap.set("#parallaxe-bg-2", { x:0, y:0, duration: 1});
+gsap.to("#parallaxe-bg-2", {x:'0vw', y:'40vh', duration: 15, repeat: -1,});
+
+gsap.set("#parallaxe-bg-3", { x:0, y:0, duration: 1});
+gsap.to("#parallaxe-bg-3", {x:'0vw', y:'-50vh', duration: 15, repeat: -1,});*/
+
+gsap.to('#parallaxe-bg-1', {
+  y:'40vh', 
+  scrollTrigger:{
+      markers: true,
+      start: "top 90%",
+      end: "bottom 20%",
+      trigger: "#parallaxe-bg-1",
+      scrub: 1}}
+)
+  
+gsap.to('#parallaxe-bg-2', {
+  y:'30vh', 
+  scrollTrigger:{
+      markers: true,
+      start: "top 90%",
+      end: "bottom 20%",
+      trigger: "#parallaxe-bg-2",
+      scrub: 1}}
+)
+
+gsap.to('#parallaxe-bg-3', {
+  y:'-50vh', 
+  scrollTrigger:{
+      markers: true,
+      start: "top 90%",
+      end: "bottom 10%",
+      trigger: "#parallaxe-bg-3",
+      scrub: 1}}
+)
 
 /* chapitre 4 */
 
