@@ -150,6 +150,9 @@ document.addEventListener("DOMContentLoaded", function() {
 gsap.set(".constellation", {x:'0', y:'100vh', opacity:1, duration:5});
 gsap.to(".constellation", {x:'0', y:'80vh', duration:1, opacity:1,repeat:-1,duration:5});
 
+/* chapitre 1 {}*/
+
+
 /* chapitre 2 */
 /*------------------------etoile--------------------------------------------------*/ 
 gsap.set(".star", {x:'70%', y:'60%'});
@@ -273,8 +276,16 @@ gsap.set(".constellation_inverse", {x:'0', y:'65vh', opacity:1, duration:5});
 gsap.to(".constellation_inverse", {x:'0', y:'90vh', duration:1, opacity:1, repeat:-1,duration:5});
 
 
-
-
+/* motionPath */
+gsap.registerPlugin(MotionPathPlugin);
+gsap.to('.star_chap2', {
+  motionPath:{
+    path: '#pathCourber',
+  },
+  duration: 6,
+  repeat: -1,
+  yoyo: true,
+})
 
 
 

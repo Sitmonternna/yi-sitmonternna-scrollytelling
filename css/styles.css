@@ -290,6 +290,15 @@ body.is-scrolling .animationmarche {
     bottom: 60vh;
     border: green 3px solid;
 }
+
+svg{
+    position: absolute;
+    fill: none;
+    stroke: none;
+    left: 20vw;
+    bottom: -5vh;
+}
+
 /*-------------------------------------------chapitre 3------------------------------------------------*/
 
 #chap3{
