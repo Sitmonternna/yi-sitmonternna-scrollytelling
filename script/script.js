@@ -327,8 +327,15 @@ gsap.to('.star_chap2', {
 })
 
 
-
-
+gsap.registerPlugin(DrawSVGPlugin);
+gsap.fromTo('#path_etoile',
+{drawSVG: '0% 0%'
+},
+{drawSVG: '0% 100%',
+duration: 2,
+ease: "power1.inOut",
+repeat:-1
+})
 
 
 

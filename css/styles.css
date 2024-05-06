@@ -796,3 +796,21 @@ body.is-scrolling .animationVillain {
         top: 75vh;
     }
 }
+
+.lune_svg{
+    position: absolute;
+    width: 8vw;
+    bottom: -34vh;
+    left: 0;
+    
+  }
+  
+  #path_etoile{
+    fill: transparent;
+  }
+
+  #path_etoile{
+    stroke: #8A90AA;
+    stroke-width: 10px;
+  }
+
