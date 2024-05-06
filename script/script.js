@@ -20,29 +20,45 @@ window.addEventListener('scroll', function() {
 /* chapitre 1 */
 
 // SROLLTRIGGER
-const chap1Scoll = document.getElementById("chap1");
-gsap.to(chap1Scoll,{
-    opacity: 1,
-  duration: 1,
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+gsap.to("#chap1",{
   scrollTrigger: {
-    trigger: chapter2,
+    trigger: "#chap1",
     start: 'top center',
     end: 'bottom center',
-    scrub: true
-    }
+    toggleActions: "play none none none"
+    },
+    opacity: 1,
+    duration: 1
 });
 
-
-const chap2Scoll = document.getElementById("chap2");
-gsap.to(chap2Scoll,{
+gsap.to("#chap2",{
     opacity: 1,
     duration:1,
     scrollTrigger: {
-        trigger: chap2Scoll,
+        trigger: "#chap2",
         start: "top center",
         end: "bottom center",
-        scrub: true
-    }
+        toggleActions: "play none none none"
+    },
+    opacity: 1,
+    duration: 1
+});
+
+gsap.to("#chap3",{
+    opacity: 1,
+    duration:1,
+    scrollTrigger: {
+        trigger: "#chap3",
+        start: "top center",
+        end: "bottom center",
+        toggleActions: "play none none none"
+    },
+    opacity: 1,
+    duration: 1
 });
 
 /*constellation */
