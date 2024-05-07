@@ -799,12 +799,12 @@ body.is-scrolling .animationVillain {
 
 .lune_svg{
     position: absolute;
-    width: 8vw;
-    bottom: -34vh;
+    width: 15vw;
+    bottom: -30vh;
     left: 0;
     
   }
-  
+
   #path_etoile{
     fill: transparent;
   }
@@ -814,3 +814,13 @@ body.is-scrolling .animationVillain {
     stroke-width: 10px;
   }
 
+
+.numeroChapitre{
+    z-index: 1;
+    position: absolute;
+    font-size: 2vw;
+    bottom: -1vh;
+    left: 7vw;
+    font-family: "quicksand";
+    color: var(--pastel_blue);
+}

@@ -1,3 +1,6 @@
+/*PLUGIN */
+gsap.registerPlugin(TextPlugin);
+
 /*ANIMATION INTRO SCROLL DOWN */
 gsap.set(".introScroll", { x:0, y:0, opacity:1, duration: 1, repeat: -1, yoyo: true, ease: "linear"});
 gsap.to(".introScroll", {x:0, y:30, opacity: 0, duration: 1, repeat: -1, yoyo: true, ease: "linear"});
@@ -184,15 +187,7 @@ gsap.timeline({repeat:-1,
 gsap.set(".lit_complet_chap3", { x:0, y:0, duration: 1, repeat: -1, yoyo: true});
 gsap.to(".lit_complet_chap3", {x:'20vw', y:0, duration: 10, repeat: -1,});
 
-/* parallax 
-gsap.set("#parallaxe-bg-1", { x:0, y:0, duration: 1});
-gsap.to("#parallaxe-bg-1", {x:'0vw', y:'30vh', duration: 20, repeat: -1,});
-
-gsap.set("#parallaxe-bg-2", { x:0, y:0, duration: 1});
-gsap.to("#parallaxe-bg-2", {x:'0vw', y:'40vh', duration: 15, repeat: -1,});
-
-gsap.set("#parallaxe-bg-3", { x:0, y:0, duration: 1});
-gsap.to("#parallaxe-bg-3", {x:'0vw', y:'-50vh', duration: 15, repeat: -1,});*/
+/* parallax*/
 
 gsap.to('#parallaxe-bg-1', {
   y:'40vh', 
@@ -205,7 +200,7 @@ gsap.to('#parallaxe-bg-1', {
 )
   
 gsap.to('#parallaxe-bg-2', {
-  y:'30vh', 
+  y:'20vh', 
   scrollTrigger:{
       markers: true,
       start: "top 90%",
@@ -232,8 +227,6 @@ gsap.timeline({repeat:-1})
 .to('.tombe', {x:'0', y:'50vh', rotate: '360deg',duration:3})
 .to('.tombe', {x:'0', y:'50vh', opacity:0, duration:1})
 .to('.atterir', {opacity:1, duration:1});
-
-
 
 gsap.timeline({repeat:-1})
 .to('.star_lead', {x:'0', y:'30vh', rotate: '360deg',duration:5})
@@ -314,9 +307,9 @@ gsap.timeline({repeat:-1})
 gsap.set(".constellation_inverse", {x:'0', y:'65vh', opacity:1, duration:5});
 gsap.to(".constellation_inverse", {x:'0', y:'90vh', duration:1, opacity:1, repeat:-1,duration:5});
 
-
 /* motionPath */
 gsap.registerPlugin(MotionPathPlugin);
+
 gsap.to('.star_chap2', {
   motionPath:{
     path: '#pathCourber',
@@ -336,8 +329,6 @@ duration: 2,
 ease: "power1.inOut",
 repeat:-1
 })
-
-
 
 
 
