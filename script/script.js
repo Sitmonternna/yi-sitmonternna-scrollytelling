@@ -503,3 +503,12 @@ gsap.to(animTexteChap8, {
   },
   time: 0
 });
+
+gsap.registerPlugin(MorphSVGPlugin);
+gsap.to(".path_etoile",{
+  morphSVG: {
+    shape: ".coeur"
+  },
+  duration: 2,
+  repeat: -1
+});

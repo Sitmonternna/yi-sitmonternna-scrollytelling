@@ -824,3 +824,19 @@ body.is-scrolling .animationVillain {
     font-family: "quicksand";
     color: var(--pastel_blue);
 }
+
+/*morphing*/
+.morphing{
+    transform: translate(-3vw, 10vh) scale(0.2);
+}
+
+.coeur{
+    position: absolute;
+    width: 10vw;
+    visibility: hidden;
+}
+
+.path_etoile{
+    position: absolute;
+    width: 10vw;
+}
