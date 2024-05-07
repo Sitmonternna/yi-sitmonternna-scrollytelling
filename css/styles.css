@@ -33,13 +33,13 @@ ul.technique-gsap li{
 }
 
 @font-face {
-    font-family: "roboto";
-    src: url(../assets/font/Roboto/Roboto-Light.ttf) format("truetype");
+    font-family: "display";
+    src: url(../assets/font/Delius_Unicase/DeliusUnicase-Bold.ttf) format("truetype");
 }
 
 @font-face {
-    font-family: "quicksand";
-    src: url(../assets/font/Quicksand/Quicksand-VariableFont_wght.ttf) format("truetype");
+    font-family: "storyline";
+    src: url(../assets/font/Chilanka/Chilanka-Regular.ttf) format("truetype");
 }
 
 /*header*/
@@ -51,7 +51,6 @@ ul.technique-gsap li{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .introScroll{
@@ -60,16 +59,18 @@ ul.technique-gsap li{
     right: 35%;
     top: 60%;
     color: var(--white);
-    font-family: "roboto";
+    font-family: "display";
+    border: green 4px solid;
 }
 
 .paragraphe{
-    font-family: "roboto";
-    font-size: 1.5vh;
+    font-family: "storyline";
+    font-size: 1vw;
     color: var(--pastel_blue);
-    transform: translateY(10vw) translateX(18vw);
+    transform: translateY(8vw) translateX(18vw);
     text-align: justify;
     width: 55vw;
+    border: green 4px solid;
 }
 
 
@@ -100,15 +101,15 @@ h1{
     position: absolute;
     left: 15%;
     right: 15%;
-    font-size: 3.5vw;
-    font-family: "quicksand";
+    font-size: 2.5vw;
+    font-family: "display";
 }
 
 /*spritesheet - marche Polaris*/
 .animationmarche{
     position: absolute;
-    bottom: -10vh;
-    left: 15vw;
+    bottom: 0vh;
+    left: 35vw;
     width: 400px;
     height: 400px;
     background-size: cover;
@@ -120,7 +121,6 @@ h1{
     animation-timing-function: steps(5);
     animation-play-state: paused;
     z-index: 1;
-    transform: scale(0.5);
     border: green 3px solid;
 }
 
@@ -204,23 +204,6 @@ body.is-scrolling .animationmarche {
     border: green 3px solid;
 }
 /*-------------------------------------------chapitre 1------------------------------------------------*/
-.cadreLit{
-    position: absolute;
-    width: 50vw;
-    bottom: -7vh;
-    left: 24vw;
-    z-index: -1;
-    border: blue 3px solid;
-}
-
-.couverture{
-    position: absolute;
-    width: 50vw;
-    bottom: -13vh;
-    left: 30.5vw;
-    border: blue 3px solid;
-}
-
 .lit_complet{
     position: absolute;
     width: 50vw;
@@ -242,6 +225,7 @@ body.is-scrolling .animationmarche {
     z-index: 1;
     border: blue 3px solid;
 }
+
 #chap1{
     background-image: url(../img/img_arriere_plan/chapitre_01.jpg);
     background-position: center;
@@ -255,6 +239,7 @@ body.is-scrolling .animationmarche {
     margin-left: 20vw;
     margin-right: 20vw;
     left: 5vw;
+    border: green 4px solid;
 }
 
 /*-------------------------------------------chapitre 2------------------------------------------------*/
@@ -297,6 +282,7 @@ svg{
     stroke: none;
     left: 20vw;
     bottom: -5vh;
+    border: rgb(128, 73, 0) 4px solid;
 }
 
 /*-------------------------------------------chapitre 3------------------------------------------------*/
@@ -385,6 +371,7 @@ svg{
     left: 41vw;
     bottom: 20vh;
     opacity: 0;
+    border: green 4px solid;
 }
 
 /*-------------------------------------------chapitre 5------------------------------------------------*/
@@ -493,19 +480,11 @@ body.is-scrolling .animationmarche_chap5 {
     bottom: 30vh;
     border: green 3px solid;
 }
-/*
-.villain_peur{
-    position: absolute;
-    width: 20vw;
-    left: 25vw;
-    bottom: 30vh;
-}
-*/
 
 h2{
     font-size: 3vw;
     color: var(--white);
-    font-family: quicksand;
+    font-family: display;
 }
 
 .mot_audace{
@@ -629,6 +608,7 @@ body.is-scrolling .animationVillain {
     position: absolute;
     margin-left: 20vw;
     margin-right: 20vw;
+    border: green 4px solid;
 }
 
 .assisLit_reveille{
@@ -655,12 +635,13 @@ body.is-scrolling .animationVillain {
     position: absolute;
     color: var(--pastel_blue);
     font-size: 1.5vw;
-    font-family: roboto;
+    font-family: storyline;
     margin-left: 10vw;
     margin-right: 10vw;
     top: 5vh;
     text-align: justify;
     z-index: 1;
+    border: green 4px solid;
 }
 
 /*-------------------------------------------------------respnsive_media_queries---------------------------------------------------------------------------------------------------*/
@@ -802,6 +783,7 @@ body.is-scrolling .animationVillain {
     width: 15vw;
     bottom: -30vh;
     left: 0;
+    border: green 4px solid;
     
   }
 
@@ -821,13 +803,15 @@ body.is-scrolling .animationVillain {
     font-size: 2vw;
     bottom: -1vh;
     left: 7vw;
-    font-family: "quicksand";
+    font-family: storyline;
     color: var(--pastel_blue);
+    border: green 4px solid;
 }
 
 /*morphing*/
 .morphing{
     transform: translate(-3vw, 10vh) scale(0.2);
+    border: green 4px solid;
 }
 
 .coeur{

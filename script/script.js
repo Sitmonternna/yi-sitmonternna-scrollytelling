@@ -512,3 +512,40 @@ gsap.to(".path_etoile",{
   duration: 2,
   repeat: -1
 });
+
+/*spritesheet
+ajouter scroll pour faire de x 'a x 
+*/
+gsap.to(".animationmarche_chap5",{
+  x: "-30vw",
+  scrollTrigger: {
+    scrub: true,
+    markers: true,
+    start: 'top 75%',
+    end: 'bottom 25%',
+    trigger: '.animationmarche_chap5',
+  }
+})
+
+
+gsap.to(".animationmarche",{
+  x: "-47vw",
+  scrollTrigger: {
+    scrub: true,
+    markers: true,
+    start: 'top 75%',
+    end: 'bottom 25%',
+    trigger: '.animationmarche',
+  }
+})
+
+gsap.to(".animationVillain",{
+  x: "20vw",
+  scrollTrigger: {
+    scrub: true,
+    markers: true,
+    start: 'top 75%',
+    end: 'bottom 25%',
+    trigger: '.animationVillain',
+  }
+})
