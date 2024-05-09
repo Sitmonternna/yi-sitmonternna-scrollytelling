@@ -517,26 +517,24 @@ h2{
 /*animation villain*/
 .animationVillain{
     position: absolute;
-    top: 30vw;
+    top: 20vh;
     left: 8vw;
-    width: 19vw;
-    height: 30vh;
+    width: 20vw;
+    height: 20vw;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../img/img_elements_visuels/spritesheet_meteorite.png);
-    background-position: center;
     animation-name: villain;
-    animation-duration: 5s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
-    animation-timing-function: steps(5);
+    animation-timing-function: steps(6);
     animation-play-state: paused;
-    transform: scale(1.5);
     /*border: green 3px solid;*/
 }
 
 @keyframes villain{
     from {background-position: 0 0;}
-    to {background-position: -64900px 5;}
+    to {background-position: -64850px 0;}
 }
 
 body.is-scrolling .animationVillain {
