@@ -517,30 +517,31 @@ h2{
 /*animation villain*/
 .animationVillain{
     position: absolute;
-    top: 20vh;
-    left: 10vw;
-    width: 600px;
-    height: 600px;
+    top: 30vw;
+    left: 20vw;
+    width: 38vw;
+    height: 30vh;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url(../img/img_personnages/spritesheet/meteorite_spritesheet/spritesheet.png);
+    background-image: url(../img/img_elements_visuels/spritesheet_meteorite.png);
+    background-position: center;
     animation-name: villain;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-timing-function: steps(6);
-    animation-play-state: paused;
+    animation-timing-function: steps(5);
+    animation-play-state: running;
     transform: scale(1.5);
     border: green 3px solid;
 }
 
 @keyframes villain{
     from {background-position: 0 0;}
-    to {background-position: -237600px 0;}
+    to {background-position: -64900px 5;}
 }
-
+/*
 body.is-scrolling .animationVillain {
     animation-play-state: running;
-}
+}*/
 
 /*-------------------------------------------chapitre 7------------------------------------------------*/
 
