@@ -338,10 +338,10 @@ animTexteChap1.to("#texteChap1", {
 });
 gsap.to(animTexteChap1, {
   scrollTrigger: {
-    trigger: ".texteChap1", // Déclencher l'animation lorsque cet élément est visible
-    start: "top 80%", // Déclencher l'animation lorsque 80 % de l'élément texte est visible
+    trigger: ".texteChap1", 
+    start: "top 80%", 
     end: "bottom top",
-    scrub: true // Défilement fluide
+    scrub: true 
   },
   time: 0
 });
@@ -361,10 +361,10 @@ animTexteChap2.to(".texteChap2", {
 });
 gsap.to(animTexteChap2, {
   scrollTrigger: {
-    trigger: ".texteChap2", // Déclencher l'animation lorsque cet élément est visible
-    start: "top 80%", // Déclencher l'animation lorsque 80 % de l'élément texte est visible
+    trigger: ".texteChap2", 
+    start: "top 80%", 
     end: "bottom top",
-    scrub: true // Défilement fluide
+    scrub: true 
   },
   time: 0
 });
@@ -384,10 +384,10 @@ animTexteChap3.to(".texteChap3", {
 });
 gsap.to(animTexteChap3, {
   scrollTrigger: {
-    trigger: ".texteChap3", // Déclencher l'animation lorsque cet élément est visible
-    start: "top 80%", // Déclencher l'animation lorsque 80 % de l'élément texte est visible
+    trigger: ".texteChap3", 
+    start: "top 80%", 
     end: "bottom top",
-    scrub: true // Défilement fluide
+    scrub: true 
   },
   time: 0
 });
@@ -407,10 +407,10 @@ animTexteChap4.to(".texteChap4", {
 });
 gsap.to(animTexteChap4, {
   scrollTrigger: {
-    trigger: ".texteChap4", // Déclencher l'animation lorsque cet élément est visible
-    start: "top 80%", // Déclencher l'animation lorsque 80 % de l'élément texte est visible
+    trigger: ".texteChap4", 
+    start: "top 80%", 
     end: "bottom top",
-    scrub: true // Défilement fluide
+    scrub: true 
   },
   time: 0
 });
@@ -430,10 +430,10 @@ animTexteChap5.to(".texteChap5", {
 });
 gsap.to(animTexteChap5, {
   scrollTrigger: {
-    trigger: ".texteChap5", // Déclencher l'animation lorsque cet élément est visible
-    start: "top 80%", // Déclencher l'animation lorsque 80 % de l'élément texte est visible
+    trigger: ".texteChap5", 
+    start: "top 80%",
     end: "bottom top",
-    scrub: true // Défilement fluide
+    scrub: true 
   },
   time: 0
 });
@@ -454,10 +454,10 @@ animTexteChap6.to(".texteChap6", {
 });
 gsap.to(animTexteChap6, {
   scrollTrigger: {
-    trigger: ".texteChap6", // Déclencher l'animation lorsque cet élément est visible
-    start: "top 80%", // Déclencher l'animation lorsque 80 % de l'élément texte est visible
+    trigger: ".texteChap6", 
+    start: "top 80%", 
     end: "bottom top",
-    scrub: true // Défilement fluide
+    scrub: true 
   },
   time: 0
 });
@@ -475,10 +475,10 @@ animTexteChap7.to(".texteChap7", {
 });
 gsap.to(animTexteChap7, {
   scrollTrigger: {
-    trigger: ".texteChap7", // Déclencher l'animation lorsque cet élément est visible
-    start: "top 80%", // Déclencher l'animation lorsque 80 % de l'élément texte est visible
+    trigger: ".texteChap7", 
+    start: "top 80%", 
     end: "bottom top",
-    scrub: true // Défilement fluide
+    scrub: true 
   },
   time: 0
 });
@@ -496,10 +496,10 @@ animTexteChap8.to("#texteChap8", {
 }); 
 gsap.to(animTexteChap8, {
   scrollTrigger: {
-    trigger: "#texteChap8", // Déclencher l'animation lorsque cet élément est visible
-    start: "top 80%", // Déclencher l'animation lorsque 80 % de l'élément texte est visible
+    trigger: "#texteChap8",
+    start: "top 80%", 
     end: "bottom top",
-    scrub: true // Défilement fluide
+    scrub: true 
   },
   time: 0
 });
@@ -513,9 +513,7 @@ gsap.to(".path_etoile",{
   repeat: -1
 });
 
-/*spritesheet
-ajouter scroll pour faire de x 'a x 
-*/
+/*spritesheet*/
 gsap.to(".animationmarche_chap5",{
   x: "-30vw",
   scrollTrigger: {

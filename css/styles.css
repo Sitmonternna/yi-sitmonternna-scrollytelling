@@ -646,14 +646,6 @@ body.is-scrolling .animationVillain {
 
 /*-------------------------------------------------------respnsive_media_queries---------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 1000px ){
-    .cadreLit{
-        bottom: 2vh;
-    }
-    
-    .couverture{
-        bottom: -2vh;
-    }
-    
     .lit_complet{
         bottom: 0;
     }
@@ -693,14 +685,6 @@ body.is-scrolling .animationVillain {
 }
 
 @media screen and (max-width: 500px ){
-    .cadreLit{
-        bottom: 2vh;
-    }
-    
-    .couverture{
-        bottom: -2vh;
-    }
-    
     .lit_complet{
         bottom: 0;
     }
