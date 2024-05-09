@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
         start: "top 80%", // Déclenche l'animation lorsque le haut du chapitre atteint 80% du viewport
         end: "bottom 20%", // Arrête l'animation lorsque le bas du chapitre atteint 20% du viewport
         toggleActions: "play none none none", // Animation déclenchée lorsque le chapitre entre en scène
-        markers: true // Pour déboguer, affiche les marqueurs ScrollTrigger
+        markers: false // Pour déboguer, affiche les marqueurs ScrollTrigger
       }
     });
 
@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
         start: "top 80%",
         end: "bottom 20%",
         toggleActions: "play none none none",
-        markers: true
+        markers: false
       }
     });
 
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
         start: "top 80%",
         end: "bottom 20%",
         toggleActions: "play none none none",
-        markers: true
+        markers: false
       }
     });
 
@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
         start: "top 80%",
         end: "bottom 20%",
         toggleActions: "play none none none",
-        markers: true
+        markers: false
       }
     });
     /* ---- Animation chapitre 5 ----- */
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
         start: "top 80%",
         end: "bottom 20%",
         toggleActions: "play none none none",
-        markers: true
+        markers: false
       }
     });
 
@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
         start: "top 80%",
         end: "bottom 20%",
         toggleActions: "play none none none",
-        markers: true
+        markers: false
       }
     });
 
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
         start: "top 80%",
         end: "bottom 20%",
         toggleActions: "play none none none",
-        markers: true
+        markers: false
       }
     });
     /* ---- Animation chapitre 8 ----- */
@@ -134,7 +134,7 @@ document.addEventListener("DOMContentLoaded", function() {
         start: "top 80%",
         end: "bottom 20%",
         toggleActions: "play none none none",
-        markers: true
+        markers: false
       }
     });
   });
@@ -158,7 +158,7 @@ gsap.to(".star", {x:'70%', y:'50%', duration:1, repeat:-1, yoyo: true});
 /*-----------star avec animation inverse ------------------*/
 gsap.timeline({repeat:-1,
     scrollTrigger:{
-        markers: true,
+        markers: false,
         start: "top 75%",
         end: "bottom 25%",
         toggleActions: "restart complete reverse reverse",
@@ -184,7 +184,7 @@ gsap.to(".lit_complet_chap3", {x:'20vw', y:0, duration: 10, repeat: -1,});
 gsap.to('#parallaxe-bg-1', {
   y:'40vh', 
   scrollTrigger:{
-      markers: true,
+      markers: false,
       start: "top 90%",
       end: "bottom 20%",
       trigger: "#parallaxe-bg-1",
@@ -194,7 +194,7 @@ gsap.to('#parallaxe-bg-1', {
 gsap.to('#parallaxe-bg-2', {
   y:'20vh', 
   scrollTrigger:{
-      markers: true,
+      markers: false,
       start: "top 90%",
       end: "bottom 20%",
       trigger: "#parallaxe-bg-2",
@@ -204,7 +204,7 @@ gsap.to('#parallaxe-bg-2', {
 gsap.to('#parallaxe-bg-3', {
   y:'-50vh', 
   scrollTrigger:{
-      markers: true,
+      markers: false,
       start: "top 90%",
       end: "bottom 10%",
       trigger: "#parallaxe-bg-3",
@@ -522,7 +522,7 @@ gsap.to(".animationmarche_chap5",{
   x: "-30vw",
   scrollTrigger: {
     scrub: true,
-    markers: true,
+    markers: false,
     start: 'top 75%',
     end: 'bottom 25%',
     trigger: '.animationmarche_chap5',
@@ -534,7 +534,7 @@ gsap.to(".animationmarche",{
   x: "-47vw",
   scrollTrigger: {
     scrub: true,
-    markers: true,
+    markers: false,
     start: 'top 75%',
     end: 'bottom 25%',
     trigger: '.animationmarche',
@@ -545,7 +545,7 @@ gsap.to(".animationVillain",{
   x: "20vw",
   scrollTrigger: {
     scrub: true,
-    markers: true,
+    markers: false,
     start: 'top 75%',
     end: 'bottom 25%',
     trigger: '.animationVillain',

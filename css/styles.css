@@ -1,6 +1,8 @@
 /*style généraux*/
 
 ul.technique-gsap{
+    position: absolute;
+    display: none;
     background: rgba(0,0,0,0.3);
     color: white;
     font-size: 10px;
@@ -76,6 +78,7 @@ ul.technique-gsap li{
 
 body{
     overflow: scroll;
+    background-color: var(--darkBlue);
 }
 
 
@@ -84,14 +87,12 @@ body{
     position: relative;
     bottom: 0;
     margin: 0;
-    padding: 0;
-    font-family: "roboto";
-    font-size: 11px;
+    padding: 2vh;
+    font-family: storyline;
     color: var(--white);
     text-align: center;
-    background-color: #3D314A;
-    font-family: "roboto";
-    font-size: 1.5vh;
+    background-color: var(--darkBlue);
+    font-size: 1vw;
     color: var(--pastel_blue);
 }
 
@@ -139,7 +140,7 @@ body.is-scrolling .animationmarche {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    border: 1px red solid;
+    /*border: 1px red solid;*/
 }
 
 .poisson{
