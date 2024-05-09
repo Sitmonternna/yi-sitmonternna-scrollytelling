@@ -300,6 +300,7 @@ gsap.set(".constellation_inverse", {x:'0', y:'65vh', opacity:1, duration:5});
 gsap.to(".constellation_inverse", {x:'0', y:'90vh', duration:1, opacity:1, repeat:-1,duration:5});
 
 /* motionPath */
+/*
 gsap.registerPlugin(MotionPathPlugin);
 
 gsap.to('.star_chap2', {
@@ -309,9 +310,9 @@ gsap.to('.star_chap2', {
   duration: 6,
   repeat: -1,
   yoyo: true,
-})
+})*/
 
-
+/*
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.fromTo('#path_etoile',
 {drawSVG: '0% 0%'
@@ -320,7 +321,8 @@ gsap.fromTo('#path_etoile',
 duration: 2,
 ease: "power1.inOut",
 repeat:-1
-})
+})*/
+
 gsap.registerPlugin(TextPlugin);
 
 const animTexteChap1 = gsap.timeline({
@@ -504,6 +506,7 @@ gsap.to(animTexteChap8, {
   time: 0
 });
 
+/*
 gsap.registerPlugin(MorphSVGPlugin);
 gsap.to(".path_etoile",{
   morphSVG: {
@@ -512,6 +515,7 @@ gsap.to(".path_etoile",{
   duration: 2,
   repeat: -1
 });
+*/
 
 /*spritesheet*/
 gsap.to(".animationmarche_chap5",{
