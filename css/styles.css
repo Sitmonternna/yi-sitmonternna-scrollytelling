@@ -62,7 +62,7 @@ ul.technique-gsap li{
     top: 60%;
     color: var(--white);
     font-family: "display";
-    /*border: green 4px solid;*/
+    
 }
 
 .paragraphe{
@@ -72,7 +72,7 @@ ul.technique-gsap li{
     transform: translateY(8vw) translateX(18vw);
     text-align: justify;
     width: 55vw;
-    /*border: green 4px solid;*/
+    
 }
 
 
@@ -122,7 +122,7 @@ h1{
     animation-timing-function: steps(5);
     animation-play-state: paused;
     z-index: 1;
-    /*border: green 3px solid;*/
+    
 }
 
 @keyframes marche{
@@ -140,7 +140,6 @@ body.is-scrolling .animationmarche {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    /*border: 1px red solid;*/
 }
 
 .poisson{
@@ -197,12 +196,12 @@ body.is-scrolling .animationmarche {
 
 .constellation{
     opacity: 0;
-    /*border: green 3px solid;*/
+    
 }
 
 .constellation_inverse{
     opacity: 0;
-    /*border: green 3px solid;*/
+    
 }
 /*-------------------------------------------chapitre 1------------------------------------------------*/
 .lit_complet{
@@ -210,7 +209,7 @@ body.is-scrolling .animationmarche {
     width: 50vw;
     bottom: -10vh;
     left: 25vw;
-   /*border: green 4px solid;*/
+   
 }
 
 .lune{
@@ -224,7 +223,7 @@ body.is-scrolling .animationmarche {
     bottom: 5vh;
     left: 33vw;
     z-index: 1;
-   /*border: green 4px solid;*/
+   
 }
 
 #chap1{
@@ -240,7 +239,7 @@ body.is-scrolling .animationmarche {
     margin-left: 20vw;
     margin-right: 20vw;
     left: 5vw;
-    /*border: green 4px solid;*/
+    
 }
 
 /*-------------------------------------------chapitre 2------------------------------------------------*/
@@ -266,7 +265,7 @@ body.is-scrolling .animationmarche {
     bottom: 10vh;
     left: 37vw;
     z-index: 1;
-    /*border: green 3px solid;*/
+    
 }
 
 .star_chap2{
@@ -274,7 +273,7 @@ body.is-scrolling .animationmarche {
     width: 10vw;
     left: 70vw;
     bottom: 60vh;
-    /*border: green 3px solid;*/
+    
 }
 
 svg{
@@ -283,7 +282,7 @@ svg{
     stroke: none;
     left: 20vw;
     bottom: -5vh;
-    /*border: green 4px solid;*/
+    
 }
 
 /*-------------------------------------------chapitre 3------------------------------------------------*/
@@ -299,14 +298,14 @@ svg{
     position: absolute;
     top: -10vh;
     left: 50vw;
-    /*border: green 3px solid;*/
+    
 }
 
 .nuageGauche{
     position: absolute;
     top: 0vh;
     right: 50vw;
-    /*border: green 3px solid;*/
+    
 }
 
 .debout{
@@ -314,7 +313,7 @@ svg{
     width: 20vw;
     bottom: 0;
     left: 10vw;
-    /*border: green 3px solid;*/
+    
 }
 
 .star_avance{
@@ -322,7 +321,7 @@ svg{
     width: 10vw;
     left: 25vw;
     bottom: 30vh;
-    /*border: green 3px solid;*/
+    
 }
 
 .lit_complet_chap3{
@@ -330,7 +329,7 @@ svg{
     width: 50vw;
     bottom: -10vh;
     left: 25vw;
-    /*border: green 3px solid;*/
+    
 }
 
 
@@ -341,7 +340,7 @@ svg{
     left: 45vw;
     top: 0;
     z-index: 1;
-    /*border: green 3px solid;*/
+    
 }
 
 .star_lead{
@@ -349,7 +348,7 @@ svg{
     width: 10vw;
     left: 70vw;
     top: 0;
-    /*border: green 3px solid;*/
+    
 }
 
 #chap4{
@@ -372,7 +371,7 @@ svg{
     left: 41vw;
     bottom: 20vh;
     opacity: 0;
-    /*border: green 4px solid;*/
+    
 }
 
 /*-------------------------------------------chapitre 5------------------------------------------------*/
@@ -390,7 +389,7 @@ svg{
     width: 10vw;
     left: 53vw;
     bottom: 30vh;
-    /*border: green 3px solid;*/
+    
 }
 
 .roche_marche{
@@ -406,7 +405,7 @@ svg{
     left: 5vw;
     bottom: 30vh;
     opacity: 0;
-    /*border: green 3px solid;*/
+    
 }
 
 .animationmarche_chap5{
@@ -424,7 +423,7 @@ svg{
     animation-timing-function: steps(5);
     animation-play-state: paused;
     z-index: 1;
-    /*border: green 3px solid;*/
+    
 }
 
 @keyframes marcheChap5{
@@ -451,7 +450,7 @@ body.is-scrolling .animationmarche_chap5 {
     left: 55vw;
     bottom: 0;
     opacity: 1;
-    /*border: green 3px solid;*/
+    
 }
 
 .peurMiddle{
@@ -460,7 +459,7 @@ body.is-scrolling .animationmarche_chap5 {
     left: 55vw;
     bottom: 0;
     opacity: 0;
-    /*border: green 3px solid;*/
+    
 
 }
 
@@ -470,7 +469,7 @@ body.is-scrolling .animationmarche_chap5 {
     left: 55vw;
     bottom: 0;
     opacity: 0;
-    /*border: green 3px solid;*/
+    
 
 }
 
@@ -479,7 +478,7 @@ body.is-scrolling .animationmarche_chap5 {
     width: 10vw;
     left: 70vw;
     bottom: 30vh;
-    /*border: green 3px solid;*/
+    
 }
 
 h2{
@@ -494,7 +493,7 @@ h2{
     left: 45vw;
     transform: rotate(-20deg);
     opacity: 0;
-    /*border: green 3px solid;*/
+    
 }
 
 .mot_courage{
@@ -503,7 +502,7 @@ h2{
     left: 65vw;
     transform: rotate(20deg);
     opacity: 0;
-    /*border: green 3px solid;*/
+    
 }
 
 .mot_determination{
@@ -512,7 +511,7 @@ h2{
     left: 45vw;
     transform: rotate(-10deg);
     opacity: 0;
-    /*border: green 3px solid;*/
+    
 }
 
 /*animation villain*/
@@ -530,7 +529,7 @@ h2{
     animation-iteration-count: infinite;
     animation-timing-function: steps(6);
     animation-play-state: paused;
-    /*border: green 3px solid;*/
+    
 }
 
 @keyframes villain{
@@ -558,7 +557,7 @@ body.is-scrolling .animationVillain {
     left: 55vw;
     bottom: 0vh;
     opacity: 0;
-    /*border: green 3px solid;*/
+    
 }
 
 .joieFin{
@@ -567,7 +566,7 @@ body.is-scrolling .animationVillain {
     left: 55vw;
     bottom: 0vh; 
     opacity: 0;
-    /*border: green 3px solid;*/
+    
 }
 
 .star_ours{
@@ -575,7 +574,7 @@ body.is-scrolling .animationVillain {
     width: 10vw;
     left: 70vw;
     bottom: 30vh;
-    /*border: green 3px solid;*/
+    
 }
 
 .grand_ours{
@@ -584,7 +583,7 @@ body.is-scrolling .animationVillain {
     left: 70vw;
     bottom: 35vh;
     opacity: 0;
-    /*border: green 3px solid;*/
+    
 }
 
 .choque{
@@ -593,7 +592,7 @@ body.is-scrolling .animationVillain {
     left: 55vw;
     bottom: 0;
     opacity: 0;
-    /*border: green 3px solid;*/
+    
 }
 
 /*-------------------------------------------chapitre 8------------------------------------------------*/
@@ -609,7 +608,7 @@ body.is-scrolling .animationVillain {
     position: absolute;
     margin-left: 20vw;
     margin-right: 20vw;
-    /*border: green 4px solid;*/
+    
 }
 
 .assisLit_reveille{
@@ -619,7 +618,7 @@ body.is-scrolling .animationVillain {
     left: 37vw;
     z-index: 1;
     opacity: 0;
-    /*border: green 3px solid;*/
+    
 }
 
 .dort_reveille{
@@ -628,7 +627,7 @@ body.is-scrolling .animationVillain {
     bottom: 5vh;
     left: 33vw;
     z-index: 1;
-    /*border: green 3px solid;*/
+    
 }
 
 /*---------------------------------histoire texte-------------------------------------------------------*/
@@ -642,7 +641,7 @@ body.is-scrolling .animationVillain {
     top: 5vh;
     text-align: justify;
     z-index: 1;
-    /*border: green 4px solid;*/
+    
 }
 
 /*-------------------------------------------------------respnsive_media_queries---------------------------------------------------------------------------------------------------*/
@@ -768,7 +767,7 @@ body.is-scrolling .animationVillain {
     width: 15vw;
     bottom: -30vh;
     left: 0;
-    /*border: green 4px solid;*/
+    
     
   }
 
@@ -790,13 +789,13 @@ body.is-scrolling .animationVillain {
     left: 7vw;
     font-family: storyline;
     color: var(--pastel_blue);
-    /*border: green 4px solid;*/
+    
 }
 
 /*morphing*/
 .morphing{
     transform: translate(-3vw, 10vh) scale(0.2);
-    /*border: green 4px solid;*/
+    
 }
 
 .coeur{
