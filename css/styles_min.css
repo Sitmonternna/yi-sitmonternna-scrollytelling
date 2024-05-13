@@ -1,0 +1,820 @@
+/*style généraux*/
+ul.technique-gsap{
+    display: none;
+    position: absolute;
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: 400;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px 12px 20px;
+    margin: 0;
+    max-width: 300px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+ul.technique-gsap li{
+    margin: 5px 0;
+}
+
+ul.technique-gsap{
+    display: none;
+}
+
+:root{
+    --white: #FFFFFF;
+    --brown: #BCA8A1;
+    --pastel_blue: #8A90AA;
+    --lightBlue: #54719B;
+    --blue: #2B3A61;
+    --purple: #3D314A;
+    --darkBlue: #1A1423;
+    --darkBlue: #040323;
+}
+
+@font-face {
+    font-family: "display";
+    src: url(../assets/font/Delius_Unicase/DeliusUnicase-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "storyline";
+    src: url(../assets/font/Chilanka/Chilanka-Regular.ttf) format("truetype");
+}
+
+/*header*/
+.introduction{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/img_arriere_plan/chapitre_01_etoile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.introScroll{
+    position: relative;
+    left: 45%;
+    right: 45%;
+    top: 60%;
+    color: var(--white);
+    font-family: "display";
+    
+}
+
+.paragraphe{
+    font-family: "storyline";
+    font-size: 1vw;
+    color: var(--pastel_blue);
+    transform: translateY(8vw) translateX(18vw);
+    text-align: justify;
+    width: 55vw;
+    
+}
+
+
+body{
+    overflow: scroll;
+    background-color: var(--darkBlue);
+}
+
+
+/*footer*/
+.credits{
+    position: relative;
+    bottom: 0;
+    margin: 0;
+    padding: 2vh;
+    font-family: storyline;
+    color: var(--white);
+    text-align: center;
+    background-color: var(--darkBlue);
+    font-size: 1vw;
+    color: var(--pastel_blue);
+}
+
+/*font*/
+h1{
+    color: var(--pastel_blue);
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    font-size: 2.5vw;
+    font-family: "display";
+}
+
+/*spritesheet - marche Polaris*/
+.animationmarche{
+    position: absolute;
+    bottom: 0vh;
+    left: 35vw;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/img_personnages/spritesheet/marche_spritesheet/marche.png);
+    animation-name: marche;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(5);
+    animation-play-state: paused;
+    z-index: 1;
+    
+}
+
+@keyframes marche{
+    from {background-position: 0 0;}
+    to {background-position: 0 -2000px;}
+}
+
+body.is-scrolling .animationmarche {
+    animation-play-state: running;
+}
+
+/*chapitre*/
+.chapitre{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+.poisson{
+    position: absolute;
+    bottom: 0;
+    width: 20vw;
+    z-index: -1;
+    left: 80vw;
+    bottom: 5vh;
+}
+
+.chien{
+    position: absolute;
+    width: 20vw;
+    z-index: -1;
+    bottom: 30vh;
+    left: 70vw;
+    transform: rotate(10deg);
+}
+
+.draco{
+    position: absolute;
+    width: 20vw;
+    z-index: -1;
+    bottom: 0;
+    left: 60vw;
+
+}
+
+.orion{
+    position: absolute;
+    width: 15vw;
+    z-index: -1;
+    bottom: 25vh;
+    left: 50vw;
+}
+
+.perseus{
+    position: absolute;
+    width: 15vw;
+    z-index: -1;
+    bottom: 10vh;
+    left: 15vw;
+
+}
+
+.major{
+    position: absolute;
+    width: 15vw;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+}
+
+.constellation{
+    opacity: 0;
+    
+}
+
+.constellation_inverse{
+    opacity: 0;
+    
+}
+/*-------------------------------------------chapitre 1------------------------------------------------*/
+.lit_complet{
+    position: absolute;
+    width: 50vw;
+    bottom: -10vh;
+    left: 25vw;
+   
+}
+
+.lune{
+    position: absolute;
+    width: 20vw;
+}
+
+.dort{
+    position: absolute;
+    width: 25vw;
+    bottom: 5vh;
+    left: 33vw;
+    z-index: 1;
+   
+}
+
+#chap1{
+    background-image: url(../img/img_arriere_plan/chapitre_01.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+#texteChap1{
+    position: absolute;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    left: 5vw;
+    
+}
+
+/*-------------------------------------------chapitre 2------------------------------------------------*/
+
+#chap2{
+    position: relative;
+    background-image: url(../img/img_arriere_plan/chapitre_02.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.lit_complet{
+    position: absolute;
+    width: 50vw;
+    bottom: -10vh;
+    left: 25vw;
+}
+
+.assisLit{
+    position: absolute;
+    width: 25vw;
+    bottom: 10vh;
+    left: 37vw;
+    z-index: 1;
+    
+}
+
+.star_chap2{
+    position: absolute;
+    width: 10vw;
+    left: 70vw;
+    bottom: 60vh;
+    
+}
+
+svg{
+    position: absolute;
+    fill: none;
+    stroke: none;
+    left: 20vw;
+    bottom: -5vh;
+    
+}
+
+/*-------------------------------------------chapitre 3------------------------------------------------*/
+
+#chap3{
+    background-image: url(../img/img_arriere_plan/chapitre_03_bleu.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nuageDroit{
+    position: absolute;
+    top: -10vh;
+    left: 50vw;
+    
+}
+
+.nuageGauche{
+    position: absolute;
+    top: 0vh;
+    right: 50vw;
+    
+}
+
+.debout{
+    position: absolute;
+    width: 20vw;
+    bottom: 0;
+    left: 10vw;
+    
+}
+
+.star_avance{
+    position: absolute;
+    width: 10vw;
+    left: 25vw;
+    bottom: 30vh;
+    
+}
+
+.lit_complet_chap3{
+    position: absolute;
+    width: 50vw;
+    bottom: -10vh;
+    left: 25vw;
+    
+}
+
+
+/*-------------------------------------------chapitre 4------------------------------------------------*/
+.tombe{
+    position: absolute;
+    width: 20vw;
+    left: 45vw;
+    top: 0;
+    z-index: 1;
+    
+}
+
+.star_lead{
+    position: absolute;
+    width: 10vw;
+    left: 70vw;
+    top: 0;
+    
+}
+
+#chap4{
+    background-image: url(../img/img_arriere_plan/chapitre_04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.roche{
+    position: absolute;
+    left: 40vw;
+    bottom: -5vh;
+    width: 20vw;
+}
+
+.atterir{
+    position: absolute;
+    width: 20vw;
+    left: 41vw;
+    bottom: 20vh;
+    opacity: 0;
+    
+}
+
+/*-------------------------------------------chapitre 5------------------------------------------------*/
+
+#chap5{
+    background-image: url(../img/img_arriere_plan/chapitre_04.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.star_pyupyu{
+    position: absolute;
+    width: 10vw;
+    left: 53vw;
+    bottom: 30vh;
+    
+}
+
+.roche_marche{
+    position: absolute;
+    left: 75vw;
+    bottom: -5vh;
+    width: 20vw;
+}
+
+.villain_appear{
+    position: absolute;
+    width: 20vw;
+    left: 5vw;
+    bottom: 30vh;
+    opacity: 0;
+    
+}
+
+.animationmarche_chap5{
+    position: absolute;
+    bottom: 0;
+    left: 60vw;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/img_personnages/spritesheet/marche_spritesheet/marche.png);
+    animation-name: marcheChap5;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(5);
+    animation-play-state: paused;
+    z-index: 1;
+    
+}
+
+@keyframes marcheChap5{
+    from {background-position: 0 0;}
+    to {background-position: 0 -2000px;}
+}
+
+body.is-scrolling .animationmarche_chap5 {
+    animation-play-state: running;
+}
+
+/*-------------------------------------------chapitre 6------------------------------------------------*/
+
+#chap6{
+    background-image: url(../img/img_arriere_plan/chapitre_06.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.peurDebut{
+    position: absolute;
+    width: 20vw;
+    left: 55vw;
+    bottom: 0;
+    opacity: 1;
+    
+}
+
+.peurMiddle{
+    position: absolute;
+    width: 20vw;
+    left: 55vw;
+    bottom: 0;
+    opacity: 0;
+    
+
+}
+
+.peurFin{
+    position: absolute;
+    width: 20vw;
+    left: 55vw;
+    bottom: 0;
+    opacity: 0;
+    
+
+}
+
+.star_peur{
+    position: absolute;
+    width: 10vw;
+    left: 70vw;
+    bottom: 30vh;
+    
+}
+
+h2{
+    font-size: 3vw;
+    color: var(--white);
+    font-family: display;
+}
+
+.mot_audace{
+    position: absolute;
+    top: 20vh;
+    left: 45vw;
+    transform: rotate(-20deg);
+    opacity: 0;
+    
+}
+
+.mot_courage{
+    position: absolute;
+    top: 15vh;
+    left: 65vw;
+    transform: rotate(20deg);
+    opacity: 0;
+    
+}
+
+.mot_determination{
+    position: absolute;
+    top: 30vh;
+    left: 45vw;
+    transform: rotate(-10deg);
+    opacity: 0;
+    
+}
+
+/*animation villain*/
+.animationVillain{
+    position: absolute;
+    top: 20vh;
+    left: 8vw;
+    width: 20vw;
+    height: 20vw;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../img/img_elements_visuels/spritesheet_meteorite.png);
+    animation-name: villain;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(6);
+    animation-play-state: paused;
+    
+}
+
+@keyframes villain{
+    from {background-position: 0 0;}
+    to {background-position: -64850px 0;}
+}
+
+body.is-scrolling .animationVillain {
+    animation-play-state: running;
+}
+
+
+/*-------------------------------------------chapitre 7------------------------------------------------*/
+
+#chap7{
+    background-image: url(../img/img_arriere_plan/chapitre_07.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.joieDebut{
+    position: absolute;
+    width: 20vw;
+    left: 55vw;
+    bottom: 0vh;
+    opacity: 0;
+    
+}
+
+.joieFin{
+    position: absolute;
+    width: 20vw;
+    left: 55vw;
+    bottom: 0vh; 
+    opacity: 0;
+    
+}
+
+.star_ours{
+    position: absolute;
+    width: 10vw;
+    left: 70vw;
+    bottom: 30vh;
+    
+}
+
+.grand_ours{
+    position: absolute;
+    width: 15vw;
+    left: 70vw;
+    bottom: 35vh;
+    opacity: 0;
+    
+}
+
+.choque{
+    position: absolute;
+    width: 20vw;
+    left: 55vw;
+    bottom: 0;
+    opacity: 0;
+    
+}
+
+/*-------------------------------------------chapitre 8------------------------------------------------*/
+
+#chap8{
+    background-image: url(../img/img_arriere_plan/chapitre_08.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#texteChap8{
+    position: absolute;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    
+}
+
+.assisLit_reveille{
+    position: absolute;
+    width: 25vw;
+    bottom: 10vh;
+    left: 37vw;
+    z-index: 1;
+    opacity: 0;
+    
+}
+
+.dort_reveille{
+    position: absolute;
+    width: 25vw;
+    bottom: 5vh;
+    left: 33vw;
+    z-index: 1;
+    
+}
+
+/*---------------------------------histoire texte-------------------------------------------------------*/
+.histoire{
+    position: absolute;
+    color: var(--pastel_blue);
+    font-size: 1.5vw;
+    font-family: storyline;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    top: 5vh;
+    text-align: justify;
+    z-index: 1;
+    
+}
+
+/*-------------------------------------------------------respnsive_media_queries---------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1983px ){
+    .numeroChapitre{
+        bottom: 6vh;
+    }
+}
+
+@media screen and (max-width: 1000px ){
+    .lit_complet{
+        bottom: 0;
+    }
+
+    .dort{
+        position: absolute;
+        width: 25vw;
+        bottom: 8vh;
+        left: 33vw;
+        z-index: 1;
+    }
+
+    .lit_complet_chap3{
+        position: absolute;
+        width: 50vw;
+        bottom: -5vh;
+        left: 25vw;
+    }
+
+    .roche{
+        position: absolute;
+        left: 40vw;
+        bottom: 7vh;
+        width: 20vw;
+    }
+
+    .animationmarche_chap5{
+        position: absolute;
+        bottom: -8vh;
+        left: 50vw;
+        transform: scale(0.6);
+    }
+
+    .dort_reveille{
+        bottom: 8vh;
+    }
+}
+
+@media screen and (max-width: 500px ){
+    .lit_complet{
+        bottom: 0;
+    }
+
+    .dort{
+        position: absolute;
+        width: 25vw;
+        bottom: 6vh;
+        left: 33vw;
+        z-index: 1;
+    }
+
+    .lit_complet_chap3{
+        position: absolute;
+        width: 50vw;
+        bottom: -5vh;
+        left: 25vw;
+    }
+
+    .animationmarche{
+        position: absolute;
+        bottom: -15vh;
+        left: -9vw;
+        transform: scale(0.4);
+    }
+
+    .roche{
+        position: absolute;
+        left: 40vw;
+        bottom: 12vh;
+        width: 20vw;
+    }
+
+    .roche_marche{
+        position: absolute;
+        left: 75vw;
+        bottom: 0vh;
+
+    }
+
+    .assisLit{
+        bottom: 7vh;
+    }
+
+    .animationmarche_chap5{
+        position: absolute;
+        bottom: -15vh;
+        left: 25vw;
+        transform: scale(0.4);
+    }
+
+    .dort_reveille{
+        bottom: 5vh;
+    }
+
+    .assisLit_reveille{
+        bottom: 6vh;
+    }
+
+    .animationVillain{
+        transform: scale(0.6);
+        left: -20vw;
+    }
+
+    .mot_audace{
+        top: 80vh;
+    }
+    
+    .mot_courage{
+        top: 80vh;
+    }
+    
+    .mot_determination{
+        top: 75vh;
+    }
+}
+
+.lune_svg{
+    position: absolute;
+    width: 15vw;
+    bottom: -30vh;
+    left: 0;
+    
+    
+  }
+
+  #path_etoile{
+    fill: transparent;
+  }
+
+  #path_etoile{
+    stroke: #8A90AA;
+    stroke-width: 10px;
+  }
+
+
+.numeroChapitre{
+    z-index: 1;
+    position: absolute;
+    font-size: 2vw;
+    bottom: 2vh;
+    left: 7vw;
+    font-family: storyline;
+    color: var(--pastel_blue);
+    
+}
+
+/*morphing*/
+.morphing{
+    transform: translate(-3vw, 10vh) scale(0.2);
+    
+}
+
+.coeur{
+    position: absolute;
+    width: 10vw;
+    visibility: hidden;
+}
+
+.path_etoile{
+    position: absolute;
+    width: 10vw;
+}
