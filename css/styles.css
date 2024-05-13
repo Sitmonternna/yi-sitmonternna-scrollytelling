@@ -648,6 +648,12 @@ body.is-scrolling .animationVillain {
 }
 
 /*-------------------------------------------------------respnsive_media_queries---------------------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1983px ){
+    .numeroChapitre{
+        bottom: 6vh;
+    }
+}
+
 @media screen and (max-width: 1000px ){
     .lit_complet{
         bottom: 0;
