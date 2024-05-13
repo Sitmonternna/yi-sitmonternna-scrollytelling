@@ -524,6 +524,7 @@ h2{
     left: 8vw;
     width: 20vw;
     height: 20vw;
+    aspect-ratio: 1/1;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(../img/img_elements_visuels/spritesheet_meteorite.png);
@@ -794,7 +795,7 @@ body.is-scrolling .animationVillain {
     z-index: 1;
     position: absolute;
     font-size: 2vw;
-    bottom: -1vh;
+    bottom: 2vh;
     left: 7vw;
     font-family: storyline;
     color: var(--pastel_blue);
