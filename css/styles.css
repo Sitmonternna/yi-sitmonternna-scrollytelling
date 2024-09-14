@@ -1,4 +1,4 @@
-/*style généraux*/
+/*style généraux
 ul.technique-gsap{
     display: inline-block;
     position: absolute;
@@ -20,7 +20,7 @@ ul.technique-gsap{
 ul.technique-gsap li{
     margin: 5px 0;
 }
-
+*/
 
 :root{
     --white: #FFFFFF;
@@ -770,10 +770,8 @@ body.is-scrolling .animationVillain {
 .lune_svg{
     position: absolute;
     width: 15vw;
-    bottom: -30vh;
+    bottom: -26vh;
     left: 0;
-    
-    
   }
 
   #path_etoile{

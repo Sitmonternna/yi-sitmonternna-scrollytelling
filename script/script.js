@@ -145,9 +145,6 @@ document.addEventListener("DOMContentLoaded", function() {
 gsap.set(".constellation", {x:'0', y:'100vh', opacity:1, duration:5});
 gsap.to(".constellation", {x:'0', y:'80vh', duration:1, opacity:1,repeat:-1,duration:5});
 
-/* chapitre 1 {}*/
-
-
 /* chapitre 2 */
 /*------------------------etoile--------------------------------------------------*/ 
 gsap.set(".star", {x:'70%', y:'60%'});
@@ -326,17 +323,17 @@ repeat:-1
 gsap.registerPlugin(TextPlugin);
 
 const animTexteChap1 = gsap.timeline({
-  repeat: -1,
-  yoyo: true
+  /*repeat: -1,
+  yoyo: true*/
 });
 animTexteChap1.to("#texteChap1", {
   duration: 4,
   text: {
     value: "Polaris, un jeune garçon passionné d’astronomie, s’endort une nuit en rêvant de voyager parmi les étoiles. Dans son rêve, il explore un univers magique rempli d’ étoiles vivantes et de créatures célestes."
   }, 
-  ease: "power2.inOut",
+  ease: "power2.inOut",/*
   repeat: -1,
-  yoyo: true
+  yoyo: true*/
 });
 gsap.to(animTexteChap1, {
   scrollTrigger: {
@@ -349,8 +346,8 @@ gsap.to(animTexteChap1, {
 });
 
 const animTexteChap2 = gsap.timeline({
-  repeat: -1,
-  yoyo: true
+  /*repeat: -1,
+  yoyo: true*/
 });
 animTexteChap2.to(".texteChap2", {
   duration: 7,
@@ -358,8 +355,8 @@ animTexteChap2.to(".texteChap2", {
     value: "Lors de son réveil, Polaris réalise qu’il n’ est pas dans sa chambre et qu’ il y a une étoile proche de lui.L’ étoile s’introduit qu’elle est Muscida et qu’elle l’ accompagnera durant son séjour dans ce monde magique."
   }, 
   ease: "power2.inOut",
-  repeat: -1,
-  yoyo: true
+  /*repeat: -1,
+  yoyo: true*/
 });
 gsap.to(animTexteChap2, {
   scrollTrigger: {
@@ -372,8 +369,8 @@ gsap.to(animTexteChap2, {
 });
 
 const animTexteChap3 = gsap.timeline({
-  repeat: -1,
-  yoyo: true
+  /*repeat: -1,
+  yoyo: true*/
 });
 animTexteChap3.to(".texteChap3", {
   duration: 4,
@@ -381,8 +378,8 @@ animTexteChap3.to(".texteChap3", {
     value: "Après sa rencontre de l’ étoile Muscida, une étoile brillante et bienveillante qui lui explique les mystères de ce monde fantastique. Muscida devient son guide et lui apprend à naviguer à travers les constellations vivantes."
   }, 
   ease: "power2.inOut",
-  repeat: -1,
-  yoyo: true
+  /*repeat: -1,
+  yoyo: true*/
 });
 gsap.to(animTexteChap3, {
   scrollTrigger: {
@@ -418,8 +415,8 @@ gsap.to(animTexteChap4, {
 });
 
 const animTexteChap5 = gsap.timeline({
-  repeat: -1,
-  yoyo: true
+  /*repeat: -1,
+  yoyo: true*/
 });
 animTexteChap5.to(".texteChap5", {
   duration: 4,
@@ -427,8 +424,8 @@ animTexteChap5.to(".texteChap5", {
     value: "Sur son chemin, Polaris rencontre l’ombre, une force sombre qui cherche à éteindre les étoiles et plonger le monde dans les ténèbres. Il doit affronter cette menace pour protéger la lumière et la vie dans cet univers merveilleux."
   }, 
   ease: "power2.inOut",
-  repeat: -1,
-  yoyo: true
+  /*repeat: -1,
+  yoyo: true*/
 });
 gsap.to(animTexteChap5, {
   scrollTrigger: {
@@ -442,8 +439,8 @@ gsap.to(animTexteChap5, {
 
 
 const animTexteChap6 = gsap.timeline({
-  repeat: -1,
-  yoyo: true
+  /*repeat: -1,
+  yoyo: true*/
 });
 animTexteChap6.to(".texteChap6", {
   duration: 4,
@@ -451,8 +448,8 @@ animTexteChap6.to(".texteChap6", {
     value: " Grâce à son courage, sa détermination et l’ aide précieuse de Muscida, Polaris parvient à vaincre l’ombre. Les étoiles brillent à nouveau avec éclat, symbolisant la victoire de la lumière sur les ténèbres."
   }, 
   ease: "power2.inOut",
-  repeat: -1,
-  yoyo: true
+  /*repeat: -1,
+  yoyo: true*/
 });
 gsap.to(animTexteChap6, {
   scrollTrigger: {
@@ -465,8 +462,8 @@ gsap.to(animTexteChap6, {
 });
 
 const animTexteChap7 = gsap.timeline({
-  repeat: -1,
-  yoyo: true
+  /*repeat: -1,
+  yoyo: true*/
 });
 animTexteChap7.to(".texteChap7", {
   duration: 10,
