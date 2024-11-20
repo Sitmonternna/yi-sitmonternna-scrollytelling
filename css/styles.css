@@ -1,6 +1,6 @@
-/*style généraux*/
+/*style généraux
 ul.technique-gsap{
-    display: none;
+    display: inline-block;
     position: absolute;
     background: rgba(0,0,0,0.3);
     color: white;
@@ -12,7 +12,6 @@ ul.technique-gsap{
     padding: 10px 20px 12px 20px;
     margin: 0;
     max-width: 300px;
-    position: absolute;
     z-index: 1000;
     top: 0;
     left: 0;
@@ -21,10 +20,7 @@ ul.technique-gsap{
 ul.technique-gsap li{
     margin: 5px 0;
 }
-
-ul.technique-gsap{
-    display: none;
-}
+*/
 
 :root{
     --white: #FFFFFF;
@@ -533,7 +529,6 @@ h2{
     animation-iteration-count: infinite;
     animation-timing-function: steps(5);
     animation-play-state: paused;
-    border: red 1px solid;
 }
 
 @keyframes villain{
@@ -775,10 +770,8 @@ body.is-scrolling .animationVillain {
 .lune_svg{
     position: absolute;
     width: 15vw;
-    bottom: -30vh;
+    bottom: -26vh;
     left: 0;
-    
-    
   }
 
   #path_etoile{
@@ -795,7 +788,7 @@ body.is-scrolling .animationVillain {
     z-index: 1;
     position: absolute;
     font-size: 2vw;
-    bottom: -1vh;
+    bottom: 2vh;
     left: 7vw;
     font-family: storyline;
     color: var(--pastel_blue);
